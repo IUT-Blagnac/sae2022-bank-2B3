@@ -18,6 +18,19 @@ La banque DailyBank souhaite développer une application JAVA-Oracle de gestion 
 
 == Analyse de l'exstant
 
+Dans la version deja existante(V0),
+
+. un guichetier peut:
+
+- Modifier les informations client
+- Créer un nouveau client
+- Consulter un compte
+- Débiter un compte
+
+. Un chef d'agence peut:
+
+- Rendre inactif un client
+
 == Analyse des besoins
 ==== Version 1
 Les besoins de la banque pour cette  v1 de l'application dépendent des différents utilisateurs :
