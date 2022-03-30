@@ -1,10 +1,3 @@
-https://simpleicons.org/
-concepteur / redacteur / developper
-= Test TPGPO
-:icons: font
-:diagrams: .
-:experimental:
-:classroom-link: https://classroom.github.com/a/yVPdUrR4
 
 // Useful definitions
 :asciidoc: http://www.methods.co.nz/asciidoc[AsciiDoc]
@@ -25,8 +18,6 @@ ifdef::env-github[]
 endif::[]
 
 //---------------------------------------------------------------
-
-Ce TP vise à reprendre les diagrammes des UC et les lier avec le diagramme de classe.
 
 == À propos...
 
