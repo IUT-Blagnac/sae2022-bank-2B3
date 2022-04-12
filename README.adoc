@@ -69,7 +69,7 @@ Les besoins de la banque pour cette  v1 de l'application dépendent des différe
 | Date    | Nom         |  Lien                             | Retour
 | 03/04   | Gantt V1    |                                                              | 
 |         | CdC V1      |                                   |   
-|         | Suivi Projet |                                   |             
+|         | Suivi Projet |                                   |  ton repository n'est pas public, je n'ai pas accès aux commits...Pas   d'arborescence du dépôt...         
 | 22/04  | CdC V2/V3 final|                                     |  
 |         | Gantt V2    |                               |     
 |         | Gantt V3 |         |     
@@ -97,4 +97,24 @@ Les besoins de la banque pour cette  v1 de l'application dépendent des différe
 |         | Recette V3  |   |
 |         | `jar` projet |     |
 |===
+Rappel : les critères d'évaluation
+
+= Les critères d'évaluation :SAE S2.05 Gestion de projet
+
+=== CDCU
+• Page de garde (Version, date, équipe, projet ...), Sommaire
+• Présentation du sujet
+◦ contexte, objectifs, à quel problème répond-t-il ?
+• Analyse de l’existant
+• Analyse des besoins incluant V2 et V3
+• Analyse des contraintes
+◦ techniques & organisationnelles
+
+
+=== Gestion de projet
+Gantts complets, cohérents avec les issues et à jour (tâches, resp., avancements...)
+Format (Gantt en pdf, docs en asciidoc) et arborescence du dépôt
+Sources versionnées, commit réguliers et commentés...
+Gestion du projet sous Github (issues, millestones, avancée ...), prise en compte des remarques dans le readme
+
 
