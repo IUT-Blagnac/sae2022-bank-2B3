@@ -110,6 +110,8 @@ Rappel : les critères d'évaluation
 • Analyse des contraintes
 ◦ techniques & organisationnelles
 
+Le cahier des charges ne comporte pas de page de garde...
+
 
 === Gestion de projet
 Gantts complets, cohérents avec les issues et à jour (tâches, resp., avancements...)
@@ -117,4 +119,7 @@ Format (Gantt en pdf, docs en asciidoc) et arborescence du dépôt
 Sources versionnées, commit réguliers et commentés...
 Gestion du projet sous Github (issues, millestones, avancée ...), prise en compte des remarques dans le readme
 
-
+Je ne vois pas de gantt.
+Les docs sont bien en asciidoc
+Je ne vois pas les commits c'est privé..
+Les issues sont au nombre de deux très insuffisant, elles sont attribuées, il faut qu'elles soient conforme au gantt...
