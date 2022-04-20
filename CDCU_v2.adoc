@@ -1,0 +1,136 @@
+= Cahier des Charges v2
+:library: Asciidoctor
+:idprefix:
+:numbered:
+:imagedir:
+:toc: manual
+:toclevels:
+:css-signature: demo
+:toc-placement: preamble
+//:max-width: 800px
+//:doctype: book
+//:sectids!:
+
+*SAE 2.01-05* - 20/04/2022
+
+Naud Lilian +
+Guilhamasse Quentin +
+Dubayle Arnaud +
+Demeyere Thomas
+
+
+ifdef::env-github[]
+++++
+<a name="objectif"></a>
+++++
+endif::env-github[]
+
+[[objectif]]
+.Objectif
+****
+TIP: Ce document concerne uniquement la v2
+****
+
+== Presentation du sujet 
+
+Pour s’adapter aux exigenses d’instantanéité de les banques françaises ont accentué leurs efforts de restructuration et leurs investissements dans le digital.
+
+La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. Vous travaillerez à partir d’une application existante « Daily Bank » qu’il faudra adapter aux nouveaux besoins de la banque.
+
+== Analyse de l'existant
+.Dans la version deja existante (V0)
+
+. Un guichetier peut:
+.. Modifier les information client
+.. Créer un nouveau client
+.. Consulter un compte
+.. Débiter un compte
+. Un chef d'agence peut:
+.. Rendre inactif un client
+
+.Dans la v1
+
+. Un guichetier peut:
+.. Créditer/débiter in compte
+.. Créer un compte
+.. Effectuer un virement de compte à compte
+.. Cloturer un compte
+. Un chef d'agence peut:
+.. Gérer ("CRUD") les employés (guichetier et chef d'agence)
+
+== Analyse des besoins
+.Version 2
+Les besoins de la banque pour cette  v2 de l'application dépendent des différents utilisateurs :
+
+* Guichetier :
+** Générer un relevé mensuel d'un compte en PDF
+** Gérer ("CRUD") les prélèvements automatiques
+* Chef d'agence:
+** Effectuer un débit exceptionnel
+** Simuler un emprunt
+** Simuler une assurance d'empreunt
+
+== Analyse des contraintes
+===== Contraintes techniques
+
+* Depot sous GIT
+* Rédaction du CDCU en asciidoc
+* Rdaction des documentation technique et utilisateur
+* Livraison d'un .jar, code source, javadoc
+
+===== Contraintes organisationnelles
+== Livrables
+
+[cols="1,2,2,5",options=header]
+|===
+| Date    | Nom         |  Lien                             | Retour
+| 03/04   | Gantt V1    |  https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/4f551e1371b59f1ddd293f26f40feea77bc44cff/Gant.SAE.pdf[Gantt v1]                                                            | présent
+|         | CdC V1      |   https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/4f551e1371b59f1ddd293f26f40feea77bc44cff/CDCU_v1.adoc[CDCU v1]                                |   cf suite
+| 22/04  | CdC V2/V3 final|                                     |  
+|         | Gantt V2    |                               |     
+|         | Gantt V3 |         |     
+|         | Doc. Tec. V1 |        |    
+|         | Doc User V1    |        |
+|         | Recette V1  |                      | 
+|         | Suivi projet|   | 
+| 22/05   | Gantt V2  à jour    |       | 
+|         | Doc. Util. V1 |         |         
+|         | Doc. Tec. V1 |                |     
+|         | Code V1     |                     | 
+|         | Recette V1 |                      | 
+|         | Gantt V3 à jour   |                      | 
+|         | `jar` projet |    | 
+| 05/06   | Gantt V3 à Jour  |    |  
+|         | Doc. Util. V2 |         |           
+|         | Doc. Tec. V2 |    |     
+|         | Code V2     |                       |
+|         | Recette V2  |   |
+|         | `jar` projet |     |
+|12/06   | Gantt V3 à Jour  |    |  
+|         | Doc. Util. V3 |         |           
+|         | Doc. Tec. V3 |    |     
+|         | Code V3     |                       |
+|         | Recette V3  |   |
+|         | `jar` projet |     |
+|===
+Rappel : les critères d'évaluation
+
+= Les critères d'évaluation :SAE S2.05 Gestion de projet
+
+=== CDCU
+• Page de garde (Version, date, équipe, projet ...), Sommaire
+• Présentation du sujet
+◦ contexte, objectifs, à quel problème répond-t-il ?
+• Analyse de l’existant
+• Analyse des besoins incluant V2 et V3
+• Analyse des contraintes
+◦ techniques & organisationnelles
+
+Le cahier des charges ne comporte pas de page de garde...
+
+
+=== Gestion de projet
+Gantts complets, cohérents avec les issues et à jour (tâches, resp., avancements...)
+Format (Gantt en pdf, docs en asciidoc) et arborescence du dépôt
+Sources versionnées, commit réguliers et commentés...
+Gestion du projet sous Github (issues, millestones, avancée ...), prise en compte des remarques dans le readme
