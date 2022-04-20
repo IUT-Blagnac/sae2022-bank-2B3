@@ -67,7 +67,7 @@ Les besoins de la banque pour cette  v1 de l'application dépendent des différe
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom         |  Lien                             | Retour
-| 03/04   | Gantt V1    |                                                              | pas présent
+| 03/04   | Gantt V1    |                                                              | présent
 |         | CdC V1      |                                   |   cf suite
 |         | Suivi Projet |                                   |  ton repository n'est pas public, je n'ai pas accès aux commits...Pas   d'arborescence du dépôt...    cf la suite je ne peux pas créer de fichier     
 | 22/04  | CdC V2/V3 final|                                     |  
