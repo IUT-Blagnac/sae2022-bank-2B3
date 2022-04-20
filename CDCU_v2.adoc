@@ -70,6 +70,9 @@ Les besoins de la banque pour cette  v2 de l'application dépendent des différe
 ** Simuler un emprunt
 ** Simuler une assurance d'empreunt
 
+..use case
+image::https://cdn.discordapp.com/attachments/957869209298301002/966352557465280602/unknown.png[]
+
 == Analyse des contraintes
 ===== Contraintes techniques
 
@@ -113,5 +116,3 @@ Les besoins de la banque pour cette  v2 de l'application dépendent des différe
 |         | Recette V3  |   |
 |         | `jar` projet |     |
 |===
-Rappel : les critères d'évaluation
-
