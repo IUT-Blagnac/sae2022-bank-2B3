@@ -1,76 +1,49 @@
-= Cahier des Charges
+= S2.01  et S2.05 - Développement d’une application - Gestion d’un projet
 :library: Asciidoctor
 :idprefix:
-:numbered:
 :imagedir:
-:toc: manual
-:toclevels:
+:toc: left
 :css-signature: demo
-:toc-placement: preamble
-//:max-width: 800px
-//:doctype: book
-//:sectids!:
+
+***
 
 
-ifdef::env-github[]
-++++
-<a name="objectif"></a>
-++++
-endif::env-github[]
+.Equipe de choc: 
+. DUBAYLE Arnaud,
+. DEMEYERE Thomas, 
+. GUILHAMASSÉ Quentin,
+. NAUD Lilian
 
-[[objectif]]
-.Objectif
-****
-TIP: Ce document concerne uniquement la V0
-****
+== Version v0 | Semaine 13
 
-== Presentation du sujet 
+*Dans la version existante, un guichetier peut :*
 
-Pour s’adapter aux exigenses d’instantanéité de les banques françaises ont accentué leurs efforts de restructuration et leurs investissements dans le digital.
+* Modifier informations client (adresse, téléphone, …)
 
-La banque DailyBank souhaite développer une application JAVA-Oracle de gestion des comptes clients pour remplacer plusieurs outils obsolètes. Ce développement s’inscrit dans le cadre de la restructuration de ses services bancaires et l’application sera déployée dans les 100 agences que compte son réseau. Vous travaillerez à partir d’une application existante « Daily Bank » qu’il faudra adapter aux nouveaux besoins de la banque.
+* Créer un nouveau client
 
-== Analyse de l'existant
-.Dans la version deja existante (V0)
+* Consulter un compte
 
-. Un guichetier peut:
-.. Modifier les information client
-.. Créer un nouveau client
-.. Consulter un compte
-.. Débiter un compte
-. Un chef d'agence peut:
-.. Rendre inactif un client
+* Débiter un compte (BD)
 
-== Analyse des besoins
-.Version 1
-Les besoins de la banque pour cette  v1 de l'application dépendent des différents utilisateurs :
+*Un chef d’agence reprend toutes les fonctionnalitées d’un guichetier à la difference qu’il peut:*
 
-* Guichetier :
-** Créditer/débiter un compte (java et BD avec procédure stockée)
-** Créer un compte
-** Effectuer un virement de compte à compte
-** cloturer un compte
-* Chef d'agence :
-** Gérer (faire le « CRUD ») les employés (guichetier et chef d’agence)
+* Rendre inactif un client
 
-== Analyse des contraintes
-===== Contraintes techniques
+***
 
-* Depot sous GIT
-* Rédaction du CDCU en asciidoc
-* Rdaction des documentation technique et utilisateur
-* Livraison d'un .jar, code source, javadoc
+== Version v1 v2 et v3 | Semaine 16
 
-===== Contraintes organisationnelles
+
 == Livrables
 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom         |  Lien                             | Retour
-| 03/04   | Gantt V1    |                                                              | présent
-|         | CdC V1      |                                   |   cf suite
-|         | Suivi Projet |                                   |  ton repository n'est pas public, je n'ai pas accès aux commits...Pas   d'arborescence du dépôt...    cf la suite je ne peux pas créer de fichier     
-| 22/04  | CdC V2/V3 final|                                     |  
+| 03/04   | Gantt V1    |                                   |présent
+|         | CdC V1      |                                   |Présent
+|         | Suivi Projet |                                   |       
+| 22/04   | CdC V2/V3 final|                                     |complet
 |         | Gantt V2    |                               |     
 |         | Gantt V3 |         |     
 |         | Doc. Tec. V1 |        |    
@@ -97,12 +70,10 @@ Les besoins de la banque pour cette  v1 de l'application dépendent des différe
 |         | Recette V3  |   |
 |         | `jar` projet |     |
 |===
-Rappel : les critères d'évaluation
 
 = Les critères d'évaluation :SAE S2.05 Gestion de projet
 
 === CDCU
-• Page de garde (Version, date, équipe, projet ...), Sommaire
 • Présentation du sujet
 ◦ contexte, objectifs, à quel problème répond-t-il ?
 • Analyse de l’existant
@@ -110,7 +81,6 @@ Rappel : les critères d'évaluation
 • Analyse des contraintes
 ◦ techniques & organisationnelles
 
-Le cahier des charges ne comporte pas de page de garde...
 
 
 === Gestion de projet
@@ -118,80 +88,3 @@ Gantts complets, cohérents avec les issues et à jour (tâches, resp., avanceme
 Format (Gantt en pdf, docs en asciidoc) et arborescence du dépôt
 Sources versionnées, commit réguliers et commentés...
 Gestion du projet sous Github (issues, millestones, avancée ...), prise en compte des remarques dans le readme
-
-
-= Retour V1
-
-=== CDCU (j'ai mis les mêmes remarques qu'à un autre groupe)
-
-==== Page de garde (Version, date, équipe, projet ...)
-elle n'est pas présente
-
- 
-==== Sommaire voir quand ce sera plus détaillé mais il manque déjà : 
-Un lien vers le gantt du projet.
-Une descrition de l'échancier des livrables.
-
-=== Objectif du projet
-L’application doit permettre de gérer des comptes bancaires de dépôt pour des clients préalablement créés. Elle devra permettre de débiter, créditer un compte soit par virement c’est à dire un échange d’argent entre deux comptes distincts mais domiciliés dans le réseau bancaire, soit par une personne physique se présentant devant un guichet.
-... cela n'est pas suffisant.
-
-
-Qui est le client ? Qui sont les utilisateurs de l'application ?
-
-Pour moi deux les guichetiers et les chefs d'agences.
-Il faut aussi produire un texte indiquant que les guichetiers pourront créer de nouceaux clients et faire les opétations courante...
-Que les chefs d'agences pourront gérer les employé et les opérations exeptionnelles...
-
-L'application commence par une analyse de l'exsitant puis sera découpée en plusieurs versions à la demande du client
-
-==== analyse de l'existant
-
- 
-Description du système d’information actuel de l’organisation :
-Les processus informatisés ou non, impactés par le projet seront décrits
-(à l’aide d’un outil de modélisation).
- ... voir docu gestion de projet
- 
- Vous devriez ici avoir les UC de l'existant et vous devriez les commenter...
- 
- 
-==== les contraintes liées au projet
-
-
-Vous devriez indiquer qu'il y aura un lien avec une base de donnée existante, que l'appli initiale sera fournie en java avec une IHM cpdée en java FX
-Que vous devez travailler avec une équipe constituée de ...
-Que les échances des différentes version du projet sont ...
-...
-
-
-==== analyse des nouveaux besoins
-
-Indiquer les fonctionnalités qu'on vous a demandé pour la V1
-
-
-Il faut ici que vous reformulier la demande du client afin de vous assurer que vous avez bien compris.
-
-==== La description de la solution
-
-Un use case commenté peut être une bonne idée.
-
-Une maquette des interfaces...
-
-==== Modalités d’organisation pour la suite du projet
-
-qui fait quoi ici le gant commenté c'est bien
-
-Quels sont les dates de livraison de chaque livrable,
-
-Quelles seront les modalités de la livraison recette, doc...
-
-
-
-==== Enveloppe  
-Vous avez un doc de Mme pendaries depuis votre gantt vous avec les heures prévisionnelle de codage de test, de rédaction...
-
-Je ne vois pas de gantt.
-Les docs sont bien en asciidoc
-Je ne vois pas les commits c'est privé..
-Les issues sont au nombre de deux très insuffisant, elles sont attribuées, il faut qu'elles soient conforme au gantt...
