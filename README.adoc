@@ -1,142 +1,94 @@
-= Cahier des Charges V1
+= S2.01  et S2.05 - Développement d’une application - Gestion d’un projet
 :library: Asciidoctor
 :idprefix:
 :imagedir:
 :toc: left
-:toc-title: Table des matières
 :css-signature: demo
 
-.Date
-20/04/2022
+***
 
-.Equipe de choc:  
 
+.Equipe de choc: 
 . DUBAYLE Arnaud,
 . DEMEYERE Thomas, 
 . GUILHAMASSÉ Quentin,
 . NAUD Lilian
 
-== Presentation du sujet et contexte
+== Version v0 | Semaine 13
 
-.*Contexte*
-****
-Pour s'adapter aux avancées technologiques, tous les secteurs doivent accroître leurs investissements dans la numérisation et reconstruire leurs services. Les banques, en particulier, doivent fournir la plupart des services à distance via des sites Web ou des applications pour accroître l'accessibilité et l'intérêt de leurs clients. 
+*Dans la version existante, un guichetier peut :*
 
-Les stratégies de différenciation exigent des banques qu'elles innovent afin d'établir un avantage concurrentiel sur le marché. De plus recemment,  la pandémie de Covid19 a habitué les clients à tout faire à distance. De nouveaux concurrents sont entrés sur le marché.Des Néobanque. Par conséquent, les banques doivent fournir des services numériques efficaces pour répondre aux besoins des clients et  rester compétitives faces à ces nouveaux concurents.
-****
+* Modifier informations client (adresse, téléphone, …)
 
-.*Point de vu Client*
-****
-*Daily Bank* est un réseau français de 100 agences bancaires. Ils doivent restructurer leurs réseaux pour s'adapter à cette stratégie de différenciation sur un très grand marché en expension. Certains outils  obsolètes doivent être révisés dans les premières versions de l'application. En effet, les besoins bancaires évoluent ainsi que les besoins des clients, et de multiples fonctionnalités doivent être développées pour répondre à ces besoins.
-****
-
-== Analyse de l'existant
-.Dans la version deja existante (V0)
-
-*Un guichetier peut:*
-
-* Modifier les information client
 * Créer un nouveau client
+
 * Consulter un compte
-* Débiter un compte
-* Un chef d'agence peut:
+
+* Débiter un compte (BD) 
+
+*Un chef d’agence reprend toutes les fonctionnalitées d’un guichetier à la difference qu’il peut:*
+
 * Rendre inactif un client
 
-*Un chef d'agence reprend toutes les fonctionnalitées d'un guichetier à la difference qu'il peut:*
+***
 
-* Rendre inactif un Client
+== Version v1 v2 et v3 | Semaine 16
 
-== Analyse des besoins
+link:http://iutweb.fr/V1.html[voir le CDC v1 en meilleur format]
+
+link:http://iutweb.fr/V2V3.html[voir le CDC v2 et v3 en meilleur format]
 
 
-Pour réaliser ce projet, Il est indispensable de créer une application Java. L'application doit permettre la gestion des comptes bancaires de dépôt. La gestion est définie par les fonctionnalités listées ci-dessous et est organisée en fonction  de la localisation de l'utilisateur dans la banque.
+== Livrables
 
-.*Version 1*
-****
-.*Guichetier :*
+[cols="1,2,2,5",options=header]
+|===
+| Date    | Nom         |  Lien                             | Retour
+| 03/04   | Gantt V1    |                                   |présent
+|         | CdC V1      |  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v1]                                 |Présent
+|         | Suivi Projet |                                   |       
+| 22/04   | CdC V2/V3 final|  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v2, v3]                                   |complet
+|         | Gantt V2    |                               |     
+|         | Gantt V3 |         |     
+|         | Doc. Tec. V1 |        |    
+|         | Doc User V1    |        |
+|         | Recette V1  |                      | 
+|         | Suivi projet|   | 
+| 22/05   | Gantt V2  à jour    |       | 
+|         | Doc. Util. V1 |         |         
+|         | Doc. Tec. V1 |                |     
+|         | Code V1     |                     | 
+|         | Recette V1 |                      | 
+|         | Gantt V3 à jour   |                      | 
+|         | `jar` projet |    | 
+| 05/06   | Gantt V3 à Jour  |    |  
+|         | Doc. Util. V2 |         |           
+|         | Doc. Tec. V2 |    |     
+|         | Code V2     |                       |
+|         | Recette V2  |   |
+|         | `jar` projet |     |
+|12/06   | Gantt V3 à Jour  |    |  
+|         | Doc. Util. V3 |         |           
+|         | Doc. Tec. V3 |    |     
+|         | Code V3     |                       |
+|         | Recette V3  |   |
+|         | `jar` projet |     |
+|===
 
-** Créditer/débiter un compte 
-** Créer un compte
-** Effectuer un virement de compte à compte
-** cloturer un compte
+= Les critères d'évaluation :SAE S2.05 Gestion de projet
 
-.*Chef d'agence :*
-
-** Consulter les employés et pouvoir:
-
-1. créer 
-2. modifier 
-3. supprimer
-****
-
-.*Version 2*
-****
-.*Guichetier :*
-
-** Générer un relevé mensuel d’un compte en PDF
-** Gérer les prélèvements automatiques
-
-.*Chef d'agence :*
-
-** Effectuer un débit exceptionnel
-** Simuler un emprunt
-** Simuler une assurance d’emprunt
-****
-
-.*Version 3*
-****
-.*Chef d'agence :*
-
-** Les spécifications finalisées de la version 2
-** Supers options pour les tops
-** Simuler une assurance d’emprunt
-
-.*Batch :*
-
-** Générer les relevés mensuels en PDF
-** Exécuter les prélèvements automatiques
-
-****
-
-== Analyse des contraintes
-==== *Contraintes techniques*
-Les langages de programmation sont imposés.
-****
-TIP: L'application existante utilise les langages:
-
-* Java (permet de développer des applications et fonctionnalitées)
-* JavaFX (création d'interface graphique)
-* Oracle (Base de données)
-****
-Par conséquent, de nouvelles fonctionnalités sont à ajouter dans ces memes langages 
-Il s'agit aussi de ne pas repartir de zéro par rapport à ce qui existe déjà.
+=== CDCU
+• Présentation du sujet
+◦ contexte, objectifs, à quel problème répond-t-il ?
+• Analyse de l’existant
+• Analyse des besoins incluant V2 et V3
+• Analyse des contraintes
+◦ techniques & organisationnelles
 
 
 
-==== *Contraintes organisationnelles*
-
-.*Semaine 13*
-* Première version du cahier des charges en asciidoc 
-* Première version du GANTT en PDF
-
-.*Semaine 16*
-* Deuxième et troisième version du cahier des charges en asciidoc
-* Deuxième et troisième version du GANTT en PDF
-* Première version du cahier des tests (vide pour l'instant)
-
-.*Semaine 20*
-* Première version du document `technique` et du document `utilisateur`
-* Mise à jour du GANTT en PDF
-* Deuxième version du cahier des test
-
-.*Semaine 22*
-* Deuxieme version du document `technique` et du document `utilisateur`
-* Mise à jour du GANTT en PDF
-* Troisième version du cahier des tests
-
-.*Semaine 23*
-* Livraison finale des documents
-* Chiffrage du projet
-
-.*Semaine 24*
-* Evaluation
+=== Gestion de projet
+Gantts complets, cohérents avec les issues et à jour (tâches, resp., avancements...)
+Format (Gantt en pdf, docs en asciidoc) et arborescence du dépôt
+Sources versionnées, commit réguliers et commentés...
+Gestion du projet sous Github (issues, millestones, avancée ...), prise en compte des remarques dans le readme
