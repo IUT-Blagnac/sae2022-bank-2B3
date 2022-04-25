@@ -50,9 +50,9 @@ link:http://iutweb.fr/V2V3.html[voir le CDC v2 et v3 en meilleur format]
 | 22/04   | CdC V2/V3 final|  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v2, v3]                                   |complet
 |         | Gantt V2    |                               |     
 |         | Gantt V3 |         |     
-|         | Doc. Tec. V1 |        |    
-|         | Doc User V1    |        |
-|         | Recette V1  |                      | 
+|         | Doc. Tec. V1 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Technique/Documentation%20Technique.adoc[Doc. Tec. V1 Raw]      |    
+|         | Doc User V1    |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Utilisateur/Documentation%20Utilisateur.adoc[Doc User V1 Raw]       |
+|         | Recette V1  |  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Cahier%20de%20Tests/Cahier%20de%20Tests.adoc[Recette V1 Raw]                      | 
 |         | Suivi projet|   | 
 | 22/05   | Gantt V2  à jour    |       | 
 |         | Doc. Util. V1 |         |         
