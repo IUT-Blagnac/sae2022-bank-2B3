@@ -1,0 +1,26 @@
+= Fiche de Test
+:library: Asciidoctor
+:idprefix:
+:imagedir:
+:toc: left
+:css-signature: demo
+
+[.text-center]
+Coming soon
+
+[cols="2,2,2,2",options=header]
+|===
+|Etape |Operation |Resultat attendu | Resultat (OK/NOK)
+
+|...
+|...
+|...
+|...
+
+|...
+|...
+|...
+|...
+
+|===
+

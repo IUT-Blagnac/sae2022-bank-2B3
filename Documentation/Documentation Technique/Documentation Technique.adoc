@@ -1,0 +1,10 @@
+= Document Technique Raw
+:library: Asciidoctor
+:idprefix:
+:imagedir:
+:toc: left
+:css-signature: demo
+
+[.text-center]
+Coming soon
+
