@@ -157,5 +157,15 @@ Il s'agit aussi de ne pas repartir de zéro par rapport à ce qui existe déjà.
 .*Risques*
 Les risques identifiés au cours de ce projet peuvent être une gestion du temps inadéquate. Parce que nous devons respecter les délais de nos clients. Deuxièmement, une mauvaise gestion de GitHub est très susceptible de causer des problèmes.
 
+=== *Livrable*
 
+.*Pour le client*
+* Cahier des tests (Doc. Test.) V1, V2, V3
+* Documentation Utilisateur (Doc. Util.) V1, V2, V3
+* Documentation Technique (Doc. Tech.) V1, V2, V3
+* Le chiffrage du projet
+* Application (en jar executable)
 
+.*Dans le cadre de la SAE*
+* Gantt V1, V2, V3
+* Cahier des charges (CDCU) V1, V2, V3
