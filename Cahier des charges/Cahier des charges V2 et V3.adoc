@@ -2,6 +2,7 @@
 :library: Asciidoctor
 :idprefix:
 :imagedir:
+:numbered:
 :toc: left
 :toc-title: Table des matières
 
