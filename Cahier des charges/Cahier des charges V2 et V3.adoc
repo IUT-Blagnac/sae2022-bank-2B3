@@ -1,20 +1,24 @@
-= *Cahier des Charges V2 et V3*
+= *Cahier des Charges V2 et V3 Projet: DailyBank*
 :library: Asciidoctor
 :idprefix:
 :imagedir:
 :toc: left
 :toc-title: Table des matières
-:css-signature: demo
 
-.Date
+.*Date*
 20/04/2022
 
-.Equipe de choc:  
+.*Equipe de choc:*  
 
 . DUBAYLE Arnaud,
 . DEMEYERE Thomas, 
 . GUILHAMASSÉ Quentin,
 . NAUD Lilian
+
+.*Outils de travail collaboratifs*
+
+* Github
+* Discord
 
 == *Presentation du sujet et contexte*
 
@@ -27,7 +31,7 @@ Les stratégies de différenciation exigent des banques qu'elles innovent afin d
 
 .*Point de vu Client*
 ****
-*Daily Bank* est un réseau français de 100 agences bancaires. Ils doivent restructurer leurs réseaux pour s'adapter à cette stratégie de différenciation sur un très grand marché en expension. Certains outils  obsolètes doivent être révisés dans les premières versions de l'application. En effet, les besoins bancaires évoluent ainsi que les besoins des clients, et de multiples fonctionnalités doivent être développées pour répondre à ces besoins.
+Le client est *DailyBank*, il s'agit un réseau français de 100 agences bancaires. Ils doivent restructurer leurs réseaux pour s'adapter à cette stratégie de différenciation sur un très grand marché en expension. Certains outils  obsolètes doivent être révisés dans les premières versions de l'application. En effet, les besoins bancaires évoluent ainsi que les besoins des clients, et de multiples fonctionnalités doivent être développées pour répondre à ces besoins.
 ****
 
 .*Objectif*
@@ -107,7 +111,7 @@ Pour réaliser ce projet, Il est indispensable de créer une application Java. L
 
 ****
 
-== Analyse des contraintes
+== *Analyse des contraintes*
 ==== *Contraintes techniques*
 Les langages de programmation sont imposés.
 ****
@@ -147,3 +151,11 @@ Il s'agit aussi de ne pas repartir de zéro par rapport à ce qui existe déjà.
 
 .*Semaine 24*
 * Evaluation
+
+==== *Contraintes juridique*
+
+.*Risques*
+Les risques identifiés au cours de ce projet peuvent être une gestion du temps inadéquate. Parce que nous devons respecter les délais de nos clients. Deuxièmement, une mauvaise gestion de GitHub est très susceptible de causer des problèmes.
+
+
+
