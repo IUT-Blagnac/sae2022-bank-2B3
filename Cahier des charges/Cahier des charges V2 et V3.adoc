@@ -63,8 +63,8 @@ image::https://i.imgur.com/Qxbfrpb.png[]
 == *Analyse des besoins*
 
 
-Pour réaliser ce projet, Il est indispensable de créer une application Java. L'application doit permettre la gestion des comptes bancaires de dépôt. La gestioion est définie par les fonctionnalités listées ci-dessous et est organisée en fonction  de la localisation de l'utilisateur dans la banque.
-.*Version 3*
+Pour réaliser ce projet, Il est indispensable de créer une application Java. L'application doit permettre la gestion des comptes bancaires de dépôt. La gestion est définie par les fonctionnalités listées ci-dessous et est organisée en fonction  de la localisation de l'utilisateur dans la banque.
+
 .*Version 1*
 ****
 .*Guichetier :*
@@ -177,3 +177,7 @@ Les risques identifiés au cours de ce projet peuvent être une gestion du temps
 .*Dans le cadre de la SAE*
 * Gantt V1, V2, V3
 * Cahier des charges (CDCU) V1, V2, V3
+
+
+
+
