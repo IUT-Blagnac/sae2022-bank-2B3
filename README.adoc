@@ -34,10 +34,6 @@
 
 == Version v1 v2 et v3 | Semaine 16
 
-link:http://iutweb.fr/V1.html[voir le CDC v1 en meilleur format]
-
-link:http://iutweb.fr/V2V3.html[voir le CDC v2 et v3 en meilleur format]
-
 == Sujet 
 
 link:http://iutweb.fr/sae.html[consulter ici le sujet de la sae]
@@ -48,10 +44,10 @@ link:http://iutweb.fr/sae.html[consulter ici le sujet de la sae]
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom         |  Lien                             | Retour
-| 03/04   | Gantt V1    |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/GANTT/GANTT%20V1.pdf[GANTT V1]                                   |présent
-|         | CdC V1      |  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v1]                                 |Présent
-|         | Suivi Projet |                                   |       
-| 22/04   | CdC V2/V3 final|  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v2, v3]                                   |complet
+| 03/04   | Gantt V1    |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/GANTT/GANTT%20V1.pdf[GANTT V1]|
+|         | CdC V1      |  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v1]|
+|| Suivi Projet ||       
+| 22/04   | CdC V2/V3 final|  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v2, v3]|
 |         | Gantt V2    |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/GANTT/GANTT%20V2%20et%20V3.pdf[GANTT V2]                               |     
 |         | Gantt V3 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/GANTT/GANTT%20V2%20et%20V3.pdf[GANTT V3]         |     
 |         | Doc. Tec. V1 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Technique/Documentation%20Technique.adoc[Doc. Tec. V1 Raw]      |    
