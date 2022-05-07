@@ -63,8 +63,8 @@ image::https://i.imgur.com/Qxbfrpb.png[]
 == *Analyse des besoins*
 
 
-Pour réaliser ce projet, Il est indispensable de créer une application Java. L'application doit permettre la gestion des comptes bancaires de dépôt. La gestion est définie par les fonctionnalités listées ci-dessous et est organisée en fonction  de la localisation de l'utilisateur dans la banque.
-
+Pour réaliser ce projet, Il est indispensable de créer une application Java. L'application doit permettre la gestion des comptes bancaires de dépôt. La gestioion est définie par les fonctionnalités listées ci-dessous et est organisée en fonction  de la localisation de l'utilisateur dans la banque.
+.*Version 3*
 .*Version 1*
 ****
 .*Guichetier :*
@@ -76,11 +76,8 @@ Pour réaliser ce projet, Il est indispensable de créer une application Java. L
 
 .*Chef d'agence :*
 
-** Consulter les employés et pouvoir:
+** Gérer (faire le « *CRUD* ») les employés
 
-1. créer 
-2. modifier 
-3. supprimer
 ****
 
 .*Version 2*
@@ -88,7 +85,7 @@ Pour réaliser ce projet, Il est indispensable de créer une application Java. L
 .*Guichetier :*
 
 ** Générer un relevé mensuel d’un compte en PDF
-** Gérer les prélèvements automatiques
+** Gérer les prélèvements automatiques (faire le « *CRUD* »)
 
 .*Chef d'agence :*
 
@@ -110,6 +107,16 @@ Pour réaliser ce projet, Il est indispensable de créer une application Java. L
 ** Générer les relevés mensuels en PDF
 ** Exécuter les prélèvements automatiques
 
+****
+
+.*Qu'est-ce que le CRUD?*
+****
+Plus précisément, CRUD est un acronyme des noms des quatre opérations de base de la gestion de la persistance des données et applications : *Create* (créer) *Read* ou *Retrieve* (lire) *Update* (mettre à jour) Delete ou Destroy (supprimer)
+****
+
+.*Qu'est-ce que un fichier BATCH?*
+****
+Un fichier *batch* (fichier .bat, script batch ou fichier de traitement par lots) est un fichier texte exécutable par l’outil de ligne de commande Windows cmd.exe pour le traitement de commandes par lots. L’invite de commande prend alors le rôle d’interprète et d’environnement d’exécution.
 ****
 
 == *Analyse des contraintes*
