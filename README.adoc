@@ -48,6 +48,15 @@ link:http://iutweb.fr/sae.html[consulter ici le sujet de la sae]
 |         | CdC V1      |  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v1]|
 || Suivi Projet ||       
 | 22/04   | CdC V2/V3 final|  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/tree/main/Cahier%20des%20charges[CDC v2, v3]|Le nom du repository n'est pas conforme !!! la prochanine fois on ne corrige pas ...
+2/2 présentation OK
+1/2	nom répertoire à revoir !
+4	/4  Contexte ok
+2/4	Il manque qq aspects techniques sur l'appli existante (Java, BD …) Il faut présenter les 2 utilisateurs.
+2/4	Il manque les UC commentées !!
+3/4 Manque les règles de gestion (par ex. pour débiter un compte).
+	
+14/20	
+
 |         | Gantt V2    |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/GANTT/GANTT%20V2%20et%20V3.pdf[GANTT V2]                               |     
 |         | Gantt V3 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/GANTT/GANTT%20V2%20et%20V3.pdf[GANTT V3]         |     
 |         | Doc. Tec. V1 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Technique/Documentation%20Technique.adoc[Doc. Tec. V1 Raw]      |    
