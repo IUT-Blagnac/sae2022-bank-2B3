@@ -6,5 +6,5 @@
 :css-signature: demo
 
 [.text-center]
-Coming soon
+Coming soon ...
 
