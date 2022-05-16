@@ -5,22 +5,36 @@
 :toc: left
 :css-signature: demo
 
-[.text-center]
-Coming soon
 
-[cols="2,2,2,2",options=header]
-|===
-|Etape |Operation |Resultat attendu | Resultat (OK/NOK)
+.Titre
+[options="header,footer"]
+|=======================
+|*Cas de test*|     
+|*Titre*      |   
+|*objectif*   |   
+|=======================
 
-|...
-|...
-|...
-|...
+|=======================
+|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|             | |
+|             | |   
+|             | |  
+|             | | 
+|=======================
 
-|...
-|...
-|...
-|...
+.Titre
+[options="header,footer"]
+|=======================
+|*Cas de test*|     
+|*Titre*      |   
+|*objectif*   |   
+|=======================
 
-|===
+|=======================
+|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|             | |
+|             | |   
+|             | |  
+|             | | 
+|=======================
 
