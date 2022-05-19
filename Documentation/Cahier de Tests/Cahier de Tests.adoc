@@ -37,38 +37,92 @@ L'application *Daily Bank* est un réseau français de 100 agences bancaires. Il
 L'objectif est de commencer avec une application existante et d'y ajouter des fonctionnalités. Il existe deux types d'utilisateurs de l'application : *le guichetier* et *le chef d'agence*. Le guichetier pourra créer de nouveaux clients et effectuer des transactions courantes. Le chef d'agence est en mesure de gérer des ressources et des opérations. L'application se décline en plusieurs versions selon les differentes demandes des clients.
 ****
 
+== *Pré-requis*
+Pour exécuter les scénarios de test spécifiés dans le chapitre suivant, vous avez besoin des éléments suivants :
+
+* une base de donnée 
+* l'environnement de test tel que javaFX (à complété)
+
+
+== *Version 0*
+
 ****
-.Titre
 [options="header,footer"]
 |=======================
-|*Cas de test*|     
-|*Titre*      |   
-|*objectif*   |   
+|*Cas de test*|   00-01
+|*Titre*      |  Connexion guichetier 
+|*objectif*   |   Vérifier la connexion guichetier
 |=======================
-
 |=======================
 |*ID* |*Action* |*Comportment attendu* |*Résultat*
-|             | |
-|             | |   
-|             | |  
-|             | | 
+|1|Lancer l'application | L’application se lance et affiche
+l’accueil|ok
+|2|Saisir l'identifiant et le mot de passe puis selectionner le bouton "connexion"  | La fenêtre du guichetier s’affiche| ok
 |=======================
 ****
+***
 ****
-.Titre
 [options="header,footer"]
 |=======================
-|*Cas de test*|     
-|*Titre*      |   
-|*objectif*   |   
+|*Cas de test*| 00-02    
+|*Titre*      | Modification client  
+|*objectif*   | Vérifier si un guichetier peut modifier un client 
 |=======================
-
 |=======================
 |*ID* |*Action* |*Comportment attendu* |*Résultat*
-|             | |
-|             | |   
-|             | |  
-|             | | 
+|1|se connecter en tant que guichetier |le guichetier est connecter|ok
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok 
+|4|sélectionner un client puis sélectionner le bouton "modifier" |la page de modification s'ouvre|ok
+|5|compléter les champs spécifiés|Le client sélectionner est modifié|ok
+|=======================
+****
+***
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*| 00-03   
+|*Titre*      | Consulter un compte client  
+|*objectif*   | Vérifier si un guichetier peut consulter un client 
+|=======================
+|=======================
+|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que guichetier |le guichetier est connecter|ok
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok 
+|4|sélectionner un client puis sélectionner le bouton "Comptes" |la page du client s'ouvre|ok
+|=======================
+****
+***
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*| 00-04    
+|*Titre*      | Crée un nouveau client  
+|*objectif*   | Vérifier si un guichetier peut crée un client 
+|=======================
+|=======================
+|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que guichetier |le guichetier est connecter|ok
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok 
+|3|sélectionner le bouton "Nouveau client" |la page de creation s'ouvre|ok
+|4|compléter les champs spécifiés puis sélectionner le bouton "ajouter"|Le client est crée|ok
+|=======================
+****
+***
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   00-05
+|*Titre*      |  Connexion chef d'agence 
+|*objectif*   |   Vérifier la connexion chef d'agence
+|=======================
+|=======================
+|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|1|Lancer l'application | L’application se lance et affiche
+l’accueil|ok
+|2|Saisir l'identifiant et le mot de passe puis selectionner le bouton "connexion"  | La fenêtre du chef d'agence s’affiche| ok
 |=======================
 ****
 
+== *Version 1*
