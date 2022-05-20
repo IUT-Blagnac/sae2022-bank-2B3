@@ -54,7 +54,7 @@ Pour exécuter les scénarios de test spécifiés dans le chapitre suivant, vous
 |*objectif*   |   Vérifier la connexion guichetier
 |=======================
 |=======================
-|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
 |1|Lancer l'application | L’application se lance et affiche
 l’accueil|ok
 |2|Saisir l'identifiant et le mot de passe puis selectionner le bouton "connexion"  | La fenêtre du guichetier s’affiche| ok
@@ -69,7 +69,7 @@ l’accueil|ok
 |*objectif*   | Vérifier si un guichetier peut modifier un client 
 |=======================
 |=======================
-|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
 |1|se connecter en tant que guichetier |le guichetier est connecter|ok
 |2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
 |3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok 
@@ -86,7 +86,7 @@ l’accueil|ok
 |*objectif*   | Vérifier si un guichetier peut consulter un client 
 |=======================
 |=======================
-|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
 |1|se connecter en tant que guichetier |le guichetier est connecter|ok
 |2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
 |3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok 
@@ -102,7 +102,7 @@ l’accueil|ok
 |*objectif*   | Vérifier si un guichetier peut crée un client 
 |=======================
 |=======================
-|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
 |1|se connecter en tant que guichetier |le guichetier est connecter|ok
 |2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok 
 |3|sélectionner le bouton "Nouveau client" |la page de creation s'ouvre|ok
@@ -118,7 +118,7 @@ l’accueil|ok
 |*objectif*   |   Vérifier la connexion chef d'agence
 |=======================
 |=======================
-|*ID* |*Action* |*Comportment attendu* |*Résultat*
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
 |1|Lancer l'application | L’application se lance et affiche
 l’accueil|ok
 |2|Saisir l'identifiant et le mot de passe puis selectionner le bouton "connexion"  | La fenêtre du chef d'agence s’affiche| ok
