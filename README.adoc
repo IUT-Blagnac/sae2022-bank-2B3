@@ -6,7 +6,6 @@
 :css-signature: demo
 
 ***
-image::https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/oh%20no....gif[]
 
 .Equipe de choc: 
 . DUBAYLE Arnaud,
