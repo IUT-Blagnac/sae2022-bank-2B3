@@ -1,4 +1,4 @@
-= Document Technique Raw
+= Document Technique
 :library: Asciidoctor
 :idprefix:
 :imagedir:
