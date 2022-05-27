@@ -124,5 +124,153 @@ l’accueil|ok
 |2|Saisir l'identifiant et le mot de passe puis selectionner le bouton "connexion"  | La fenêtre du chef d'agence s’affiche| ok
 |=======================
 ****
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   00-06
+|*Titre*      |  Débiter un compte
+|*objectif*   |  Vérifier le débit d'un compte client
+|=======================
+|=======================
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|ok
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok
+|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|ok
+|5|Sélectionner un compte puis sélectionner le bouton "Voir opérations"|la page de gestion des opérations s'ouvre|ok
+|6|Sélectionner le bouton "enregistrer Débit"|la page "Enregistrement d'une opérations" s'ouvre|ok
+|7|Entrer le montant et choisisez le type d'opération puis sélectionner le bouton "effectuer un débit"|le débit est bien effectué (retour à la page "Gestion des opérations")|ok
+|=======================
+****
 
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   00-07
+|*Titre*      |  Rendre inactif un client
+|*objectif*   |  Vérifier si un chef d'agence puisse rendre inactif un client
+|=======================
+|=======================
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que chef d'agence|chef d'agence est connecter|ok
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok
+|4|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
+|5|Sélectionner "Inactif en bas de la page" puis validé en sélectionnant le bouton "modifier"|le client est bien inactif|ok
+|=======================
+****
 == *Version 1*
+
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   01-01
+|*Titre*      |  Débiter / Credité un compte
+|*objectif*   |  Vérifier le débit ou le crédit d'un compte client
+|=======================
+|=======================
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|ok
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok
+|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|ok
+|5|Sélectionner un compte puis sélectionner le bouton "Voir opérations" (il faut que le compte soit "ouvert" et non "clôturer"|la page de gestion des opérations s'ouvre|ok
+|6|Sélectionner le bouton "enregistrer Débit" ou "enregister Crédit"|la page "Enregistrement d'une opérations" s'ouvre|ok
+|7|Entrer le montant et choisisez le type d'opération puis sélectionner le bouton "effectuer un débit"|le débit est bien effectué (retour à la page "Gestion des opérations")|ok
+|=======================
+****
+
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   01-02
+|*Titre*      |  Créer un compte client
+|*objectif*   |  Vérifier la creation de compte client
+|=======================
+|=======================
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|ok
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok
+|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|ok
+|5|Sélectionner le bouton "Nouveau compte"|la page de gestion d'un compte s'ouvre|ok
+|6|Entrer les informations nécessaires pour faire créer un nouveau compte puis sélectionner le bouton "Ajouter"|la page se ferme et le compte est bien créer|ok
+|=======================
+****
+
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   01-03
+|*Titre*      |  Virement de compte à compte d'un même client
+|*objectif*   |  Vérifier le virement de compte à compte d'un même client
+|=======================
+|=======================
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |
+|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|
+|5|Sélectionner un compte puis sélectionner le bouton "Voir opérations"|la page de gestion des opérations s'ouvre|
+|6|Sélectionner un compte puis sélectionner le bouton "Voir opérations" (il faut que le compte soit "ouvert" et non "clôturer"|la page de gestion des opérations s'ouvre|
+|7|Sélectionner "Effectuer un virement"|la page "Enregistrement d'un virement" s'ouvre|
+|8|Saisisez le montant et le N° du compte destinataire puis sélectionner le bouton "Effectuer un virement"|retour à la page gestion des opérations et le virement à bien eu lieux|
+|=======================
+****
+
+
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   01-04
+|*Titre*      |  Clôturer un compte client
+|*objectif*   |  Vérifier la clôture d'un compte client
+|=======================
+|=======================
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |
+|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|
+|5|Sélectionner un compte puis sélectionner le bouton "Supprimer un compte" (il faut préalablement que le compte soit ouvert)|le compte afficher "clôturé" et il n'est plus ouvrable|
+|=======================
+****
+
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   01-05
+|*Titre*      |  Clôturer un compte client
+|*objectif*   |  Vérifier la clôture d'un compte client
+|=======================
+|=======================
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |
+|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|
+|5|Sélectionner un compte puis sélectionner le bouton "Supprimer un compte" (il faut préalablement que le compte soit ouvert)|le compte afficher "clôturé" et il n'est plus ouvrable|
+|=======================
+****
+
+****
+[options="header,footer"]
+|=======================
+|*Cas de test*|   01-05
+|*Titre*      |  Faire le (CRUD) d'un employé
+|*objectif*   |  Vérifier les paramètres employés
+|=======================
+|=======================
+|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
+|1|se connecter en tant que chef d'agence|le chef d'agence est connecter|
+|2|sélectionner le bouton "gestions" puis "employés" |la page de gestion des employés s'affiche|
+|3|sélectionner le bouton "Rechercher" |La liste des employés s'affiche *(READ)*|
+|4|sélectionner le bouton "Nouvel employé"|la page gestion d'un client s'ouvre|
+|4.1|remplir tous les champs puis sélectionner le bouton "ajouter"|le client est créer *(CREATE)*|
+|5|sélectionner un employé puis sélectionner le bouton "Modifier l'employé" |la page de modification s'ouvre (C'est dans celle-ci que vous pourrez changer les privilèges d'un employé) *(UPDATE)*|
+|6|sélectionner un employé puis sélectionner le bouton "supprimer l'employé" |le client n'existe plus *(DELETE)*|
+|=======================
+****
+
+== *Version 2*
+
