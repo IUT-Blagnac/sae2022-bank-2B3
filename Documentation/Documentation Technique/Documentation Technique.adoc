@@ -37,17 +37,17 @@ L'objectif est de commencer avec une application existante et d'y ajouter des fo
 
 ====
 .Diagramme stucture V0
-image:iamges/dc-initialv0.png[]
+image:images/dc-initialv0.png[]
 ====
 
 ====
 .Diagramme stucture V1
-image:iamges/dc-initialv1.png[]
+image:images/dc-initialv1.png[]
 ====
 
 ====
 .Diagramme stucture V2
-image:iamges/dc-initialv2.png[]
+image:images/dc-initialv2.png[]
 ====
 
 == *Fonctionnalités Version 1*
