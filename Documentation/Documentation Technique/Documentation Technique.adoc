@@ -37,12 +37,12 @@ L'objectif est de commencer avec une application existante et d'y ajouter des fo
 
 ====
 .Diagramme stucture V0
-image:images/dc-initialv0.png[]
+image:images/dc-v0.png[]
 ====
 
 ====
 .Diagramme stucture V1
-image:images/dc-initialv1.png[]
+image:images/dc-v1.png[]
 ====
 
 ====
