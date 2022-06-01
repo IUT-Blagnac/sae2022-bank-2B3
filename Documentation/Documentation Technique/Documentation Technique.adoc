@@ -54,6 +54,52 @@ image:images/new_dc-initialv2.png[]
 
 === *Créditer / Debiter un compte* (Thomas Demeyere)
 
+==== Description de la fonctionalité
+
+Cette fonctionalité permet à un agent banquaire de créditer ou de débiter un compte avec plusieurs methodes (Especes, virements...). Lorsque l'on rentre un montant inferieur ou égal à 0 le programme ne fait pas passer la transaction, il fait alors saisir un autre montant supperieur a 0 pour que cela fonctionne. Le déibit d'un compte ne peut être effectué que si une fois le compte débité, le montant du compte est supperieur au déouvert autorisé. Dans le cas contraire le débit est annulé.
+
+==== Use Case
+image:https://media.discordapp.net/attachments/962004101552545852/981462016109715456/unknown.png[alt="usecase"]
+
+==== Classes et ressources utilisées
+.Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
+* OperationManagement.java
+* CategorieOperation.java
+* OperationEditorPaneController.java
+* OperationManagementController.java
+* OperationEditorPane.fxml
+* OperationManagement.fxml
+* Operation.java
+* TypeOperation.java
+* AccessOperation.java
+* AccesTypeOperation
+
+==== Detail des resources
+*OperationManagement.java :* +
+Enregistrement des débit et des crédits grâce aux fonctions enregistrerDebit et enregistrerCredit.
+
+*CategorieOperation.java:* +
+Indique le type des opérations : débit et crédit.
+
+*OperationEditorPaneController.java :*
+Controlleur de la fenêtre "Enregistrement d'une opération". Permet de d'executer les commandes doAjouter, doCancel lorsque les bouttons associés sont préssés.
+
+*OperationManagementController.java :* +
+Controlleur de la fenêtre "Gestion des comptes". Permet d'effectuer les débits et crédits evec les commandes doCredit et doDébit et grâce aux boutons qui leurs sont associés.
+
+*OperationEditorPane.fxml :* +
+Fichier fxml correspondant à la fenêtre "Enregistrement d'une commande".
+
+
+*OperationManagement.fxml :* +
+fichier fxml correspondant à la fenêtre "Gestion des comptes".
+
+*Operation.java :* +
+Constructeur du Operation. Prends un identifiant d'operation, un montant, une date, une valeur de date, un numero de compte et un type d'opération en constructeurs.
+
+*TypeOperation.java :* +
+Constructeur de TypeOperation. Prends un identifiant de type d'opération en constructeur.
+
 === *Créer un compte* (Quentin Guihamassé)
 
 === *Effectuer un virement de compte à compte d'un même client*
