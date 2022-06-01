@@ -47,7 +47,7 @@ image:images/dc-v1.png[]
 
 ====
 .Diagramme stucture V2
-image:images/dc-initialv2.png[]
+image:images/new_dc-initialv2.png[]
 ====
 
 == *Fonctionnalités Version 1*
