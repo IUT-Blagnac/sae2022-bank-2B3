@@ -61,6 +61,31 @@ Il existe deux rôles différent : *guichetier* et *chef d’agence*. Le guichet
 
 === *Créditer / Debiter un compte* (Thomas Demeyere)
 
+==== Etape 1 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444684993929236/unknown.png[alt="etape1"]
+
+Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+
+Dans la gestion de clients, selectionnez un client avec son numéro de client, son nom ou son prénom. Une fois le client selectionné, cliquez sur 'Comptes client'.
+
+==== Etape 3 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444849498751016/unknown.png[alt="Etape3"]
+
+Selectionez le compte sur lequel effectuer une opération puis cliquez sur 'Voir opérations'.
+
+==== Etape 4 :
+image:https://media.discordapp.net/attachments/962004101552545852/981445412860866620/unknown.png[alt="Etape4"]
+
+Selon l'opérartion à effectuer, cliquez sur 'Enregistrer Débit' ou 'Enregistrer Crédit'.
+
+==== Etape 5 :
+image:https://media.discordapp.net/attachments/962004101552545852/981445917066539038/unknown.png[alt="Etape5"]
+
+Selectionnez le type d'opérations dans le menu déroulant, saisissez un montant supperieur a 0 et cliquez sur 'Effectuer Débit'.
+
 === *Créer un compte* (Quentin Guihamassé)
 
 === *Effectuer un virement de compte à compte d'un même client*
