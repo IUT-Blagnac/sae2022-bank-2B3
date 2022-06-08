@@ -21,6 +21,10 @@ import model.orm.AccessOperation;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DatabaseConnexionException;
 
+/**
+ * Classe qui gère le contrôleur de la pagede gestion des opérations
+ */
+
 public class OperationsManagement {
 
 	private Stage primaryStage;
@@ -28,6 +32,14 @@ public class OperationsManagement {
 	private OperationsManagementController omc;
 	private Client clientDuCompte;
 	private CompteCourant compteConcerne;
+	
+	 /**
+	 * Constructeur de la classe 
+	 * @param _parentStage : la scene qui appelle celle-ci
+	 * @param _dbstate : la session de l'utilisateur connecté
+	 * @param client : le client auquel appartient le compte dont les opérations vont être gérer
+	 * @param compte : le compte dont les modifications vont être effectuer
+	 */
 
 	public OperationsManagement(Stage _parentStage, DailyBankState _dbstate, Client client, CompteCourant compte) {
 
@@ -57,10 +69,19 @@ public class OperationsManagement {
 			e.printStackTrace();
 		}
 	}
+	
+	 /**
+	 * Permet de lancer la fonction du contrôleur de la page de gestion des opérations
+	 */
 
 	public void doOperationsManagementDialog() {
 		this.omc.displayDialog();
 	}
+	
+	 /**
+	 * Permet d'enregistrer un nouveau débit sur un compte client
+	 * @return : le nouveau débit du client
+	 */
 
 	public Operation enregistrerDebit() {
 
@@ -86,6 +107,11 @@ public class OperationsManagement {
 		return op;
 	}
 	
+	/**
+	 * Permet d'enregistrer un nouveau Crédit sur un compte client
+	 * @return : le nouveau Crédit du client
+	 */
+	
 	public Operation enregistrerCredit() {
 
 		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dbs);
@@ -109,6 +135,11 @@ public class OperationsManagement {
 		}
 		return op;
 	}
+	
+         /**
+	 * Permet d'obtenir la liste des opérations d'un compte
+	 * @return : le compte ainsi que sa liste d'opérations
+	 */
 	
 	public PairsOfValue<CompteCourant, ArrayList<Operation>>  operationsEtSoldeDunCompte() {
 		ArrayList<Operation> listeOP = new ArrayList<>();
