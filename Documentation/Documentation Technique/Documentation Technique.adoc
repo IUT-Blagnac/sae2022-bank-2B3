@@ -103,6 +103,8 @@ Constructeur de TypeOperation. Prends un identifiant de type d'opération en con
 *AccessOperation :* +
 Contient les fonction insertCredit et insertDebit qui vérifient que le débit est autorisé, enregistre l'opération et met a jour le solde
 
+
+
 === *Créer un compte* (Quentin Guihamassé)
 
 ==== Description de la fonctionalité
