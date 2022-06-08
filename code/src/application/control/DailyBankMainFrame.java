@@ -16,10 +16,19 @@ import model.orm.LogToDatabase;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DatabaseConnexionException;
 
+/**
+ * Classe qui gère le contrôleur de la page principale
+ */
+
 public class DailyBankMainFrame extends Application {
 
 	private DailyBankState dbs;
 	private Stage primaryStage;
+	
+	 /** 
+	 * Réédition de la fonction qui lance l'application
+	 * @param primaryStage : la page principale
+	 */
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -93,10 +102,18 @@ public class DailyBankMainFrame extends Application {
 			System.exit(-1);
 		}
 	}
+	
+	/**
+	 * Permet de lancer l'application
+	 */
 
 	public static void runApp() {
 		Application.launch();
 	}
+	
+	/**
+	 * Déconnecte l'utilisateur qui est connecté
+	 */
 
 	public void disconnect() {
 		this.dbs.setAgAct(null);
@@ -109,6 +126,11 @@ public class DailyBankMainFrame extends Application {
 			ed.doExceptionDialog();
 		}
 	}
+	
+	 /**
+	 * Ouvre la page de connexion
+	 */
+
 
 	public void login() {
 		LoginDialog ld = new LoginDialog(this.primaryStage, this.dbs);
@@ -137,6 +159,10 @@ public class DailyBankMainFrame extends Application {
 			}
 		}
 	}
+	
+	/**
+	 * Ouvre la page de gestion des clients
+	 */
 
 	public void gestionClients() {
 		ClientsManagement cm = new ClientsManagement(this.primaryStage, this.dbs);
