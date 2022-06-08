@@ -22,6 +22,9 @@ import model.data.Client;
 import model.data.CompteCourant;
 import model.data.Operation;
 
+/**
+ * Page de gestion des clients
+ */
 public class OperationsManagementController implements Initializable {
 
 	// Etat application
@@ -36,6 +39,14 @@ public class OperationsManagementController implements Initializable {
 	private CompteCourant compteConcerne;
 	private ObservableList<Operation> olOperation;
 
+	/**
+	 * Spécifie toutes les variables de la page
+	 * @param _primaryStage : scene de la page
+	 * @param _om : page
+	 * @param _dbstate : Sont toutes les données de la session en cours de l'utilisateur
+	 * @param client : client du compte
+	 * @param compte : compte du client
+	 */
 	// Manipulation de la fenêtre
 	public void initContext(Stage _primaryStage, OperationsManagement _om, DailyBankState _dbstate, Client client, CompteCourant compte) {
 		this.primaryStage = _primaryStage;
@@ -56,6 +67,9 @@ public class OperationsManagementController implements Initializable {
 		this.validateComponentState();
 	}
 
+	/**
+	 * Affiche la page et attend une action de la part de l'utilisateur
+	 */
 	public void displayDialog() {
 		this.primaryStage.showAndWait();
 	}
@@ -81,15 +95,24 @@ public class OperationsManagementController implements Initializable {
 	@FXML
 	private Button btncredit2;
 
+	/**
+	 * Changement de la fonction initialize
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 	}
 
+	/** 
+	 *  Ferme la fenetre
+	 */
 	@FXML
 	private void doCancel() {
 		this.primaryStage.close();
 	}
 
+	/** 
+	 *  Créer une opération de débit sur le compte client concerné et actualise ses informations
+	 */
 	@FXML
 	private void doDebit() {
 
@@ -100,6 +123,9 @@ public class OperationsManagementController implements Initializable {
 		}
 	}
 
+	/** 
+	 *  Créer une opération de crédit sur le compte client concerné et actualise ses informations
+	 */
 	@FXML
 	private void doCredit() {
 		Operation op = this.om.enregistrerCredit();
@@ -119,6 +145,9 @@ public class OperationsManagementController implements Initializable {
 		this.btnDebit.setDisable(false);
 	}
 
+	/**
+	 *  Mets à jour tous les informations, celle du clients, des opérations, du solde et du débit	
+	 */
 	private void updateInfoCompteClient() {
 
 		PairsOfValue<CompteCourant, ArrayList<Operation>> opesEtCompte;
