@@ -56,7 +56,7 @@ image:images/new_dc-initialv2.png[]
 
 ==== Description de la fonctionalité
 
-Cette fonctionalité permet à un agent banquaire de créditer ou de débiter un compte avec plusieurs methodes (Especes, virements...). Lorsque l'on rentre un montant inferieur ou égal à 0 le programme ne fait pas passer la transaction, il fait alors saisir un autre montant supperieur a 0 pour que cela fonctionne. Le déibit d'un compte ne peut être effectué que si une fois le compte débité, le montant du compte est supperieur au déouvert autorisé. Dans le cas contraire le débit est annulé.
+Cette fonctionalité permet à un agent banquaire de créditer ou de débiter un compte avec plusieurs methodes (Especes, virements...). Lorsque l'on rentre un montant inferieur ou égal à 0 le programme ne fait pas passer la transaction, il fait alors saisir un autre montant supperieur a 0 pour que cela fonctionne. Le débit d'un compte ne peut être effectué que si une fois le compte débité, le montant du compte est supperieur au découvert autorisé. Dans le cas contraire le débit est annulé.
 
 ==== Use Case
 image:https://media.discordapp.net/attachments/962004101552545852/981462016109715456/unknown.png[alt="usecase"]
@@ -111,3 +111,18 @@ Contient les fonction insertCredit et insertDebit qui vérifient que le débit e
 
 === *Gérer (CRUD) les employés (guichetier et chef d’agence)* (Arnaud Dubayle)
 
+
+
+=== *Créer un nouveau * (Quentin Guilhamassé)
+
+==== Description de la fonctionalité
+
+Cette fonctionnalité permet de créer un nouveau compte pour un client déjà existant. On peut effectuer plusieurs opérations sur ce compte comme choisir un découvert autorisé et un solde( premier dépot). Ce solde doit être strictement supérieur à 50 euros. L'id du client, l'id d'agence et le numéro de compte son choisis au préalable et ne son pas modifiable. Une fois ajouté, le nouveau compte sera affiché dans le gestionnaire de comptes du client.
+
+==== Classes et ressources utilisées
+.Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
+* ComptesManagementController.java
+* ComptesManagement.java
+* AccessCompteCourant.java
+* CompteEditorPane.fxml
+* ComptesManagement.fxml
