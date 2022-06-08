@@ -13,10 +13,20 @@ import javafx.stage.Stage;
 import model.data.CompteCourant;
 import model.data.Operation;
 
+/**
+ * Classe qui gère le contrôleur de la page de gestion des opérations (débit ou crédit) 
+ */
+
 public class OperationEditorPane {
 
 	private Stage primaryStage;
 	private OperationEditorPaneController oepc;
+	
+	 /**
+	 * Constructeur de la classe
+	 * @param _parentStage : la scene qui appelle celle-ci
+	 * @param _dbstate : la session de l'utilisateur connecté
+	 */
 
 	public OperationEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 
@@ -43,6 +53,12 @@ public class OperationEditorPane {
 			e.printStackTrace();
 		}
 	}
+	
+	 /**
+	 * Permet de lancer la fonction du controleur de la page d'enregistrement d'un débit ou crédit 
+	 * @param cpte : le compte sur lequel l'opération sera effectuer
+	 * @param cm : le type d'operation (débit ou crédit)
+	 */
 
 	public Operation doOperationEditorDialog(CompteCourant cpte, CategorieOperation cm) {
 		return this.oepc.displayDialog(cpte, cm);
