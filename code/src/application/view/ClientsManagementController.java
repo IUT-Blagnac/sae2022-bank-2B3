@@ -18,6 +18,9 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 
+/**
+ * Page de gestion des clients
+ */
 public class ClientsManagementController implements Initializable {
 
 	// Etat application
@@ -30,6 +33,12 @@ public class ClientsManagementController implements Initializable {
 	// Données de la fenêtre
 	private ObservableList<Client> olc;
 
+	/**
+	 * Spécifie toutes les variables de la page
+	 * @param _primaryStage : scene de la page 
+	 * @param _cm : Page 
+	 * @param _dbstate : Sont toutes les données de la session en cours de l'utilisateur
+	 */
 	// Manipulation de la fenêtre
 	public void initContext(Stage _primaryStage, ClientsManagement _cm, DailyBankState _dbstate) {
 		this.cm = _cm;
@@ -49,6 +58,9 @@ public class ClientsManagementController implements Initializable {
 		this.validateComponentState();
 	}
 
+	/**
+	 * Affiche la Page et attend une action de la part de l'utilisateur
+	 */
 	public void displayDialog() {
 		this.primaryStage.showAndWait();
 	}
@@ -76,15 +88,24 @@ public class ClientsManagementController implements Initializable {
 	@FXML
 	private Button btnComptesClient;
 
+	/**
+	 * Changement de la fonction initialize
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 	}
 
+	/**
+	 * Permet de fermer la page client
+	 */
 	@FXML
 	private void doCancel() {
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Permet d'effectuer une recherche des clients
+	 */
 	@FXML
 	private void doRechercher() {
 		int numCompte;
@@ -140,6 +161,9 @@ public class ClientsManagementController implements Initializable {
 		}
 	}
 
+	/**
+	 * Permet de modifier un client
+	 */
 	@FXML
 	private void doModifierClient() {
 
@@ -157,6 +181,9 @@ public class ClientsManagementController implements Initializable {
 	private void doDesactiverClient() {
 	}
 
+	/**
+	 * Permet de créé un nouveau client
+	 */
 	@FXML
 	private void doNouveauClient() {
 		Client client;
