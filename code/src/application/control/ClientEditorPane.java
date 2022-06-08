@@ -13,10 +13,21 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.data.Client;
 
+/**
+ * Classe qui gère le contrôleur de la page de gestion des clients(ajout et modification)
+*/
+
+
 public class ClientEditorPane {
 
 	private Stage primaryStage;
 	private ClientEditorPaneController cepc;
+	
+	/**
+	 * C'est le constructeur de la classe
+	 * @param _parentStage : Scene qui appelle une autre
+	 * @param _dbstate : correspond à la session de l'utilisateur qui est connecté
+	 */
 
 	public ClientEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 
