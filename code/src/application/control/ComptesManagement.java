@@ -22,12 +22,24 @@ import model.orm.exception.DatabaseConnexionException;
 import model.orm.exception.Order;
 import model.orm.exception.Table;
 
+/**
+ * Classe qui gère le contrôleur de la page de gestion des comptes (premiere page et liste des comptes)
+ */
+
+
 public class ComptesManagement {
 
 	private Stage primaryStage;
 	private ComptesManagementController cmc;
 	private DailyBankState dbs;
 	private Client clientDesComptes;
+	
+	 /**
+	 * Constructeur de la classe 
+	 * @param _parentStage : la scene qui appelle celle-ci
+	 * @param _dbstate : la session en cours de l'utilisateur connecté
+	 */
+
 
 	public ComptesManagement(Stage _parentStage, DailyBankState _dbstate, Client client) {
 
@@ -55,15 +67,29 @@ public class ComptesManagement {
 			e.printStackTrace();
 		}
 	}
+	
+	 /**
+	 * Lance la fonction du contrôleur de la page de gestion des comptes
+	 */
 
 	public void doComptesManagementDialog() {
 		this.cmc.displayDialog();
 	}
+	
+	 /**
+	 * Permet de gérer les opérations d'un compte client
+	 * @param cpt : le compte dont on gérer les opérations
+	 */
 
 	public void gererOperations(CompteCourant cpt) {
 		OperationsManagement om = new OperationsManagement(this.primaryStage, this.dbs, this.clientDesComptes, cpt);
 		om.doOperationsManagementDialog();
 	}
+	
+	/**
+	 * Permet de créer un compte
+	 * @return : le compte créé
+	 */
 
 	public CompteCourant creerCompte() {
 		CompteCourant compte;
@@ -90,6 +116,11 @@ public class ComptesManagement {
 		}
 		return compte;
 	}
+	
+	/**
+	 * Permet d'obtenir la liste des comptes client
+	 * @return : la liste des comptes clients
+	 */
 
 	public ArrayList<CompteCourant> getComptesDunClient() {
 		ArrayList<CompteCourant> listeCpt = new ArrayList<>();
