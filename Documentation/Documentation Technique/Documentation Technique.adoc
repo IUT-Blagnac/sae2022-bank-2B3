@@ -123,8 +123,8 @@ Cette fonctionnalité permet de créer un nouveau compte pour un client déjà e
 Controlleur de la fenêtre 
 
 
-=== *Effectuer un virement de compte à compte d'un même client* 
+=== *Effectuer un virement de compte à compte d'un même client* (Arnaud Dubayle)
 
 === *Clôturer un compte* (Lilian Naud)
 
-=== *Gérer (CRUD) les employés (guichetier et chef d’agence)* (Arnaud Dubayle)
+=== *Gérer (CRUD) les employés (guichetier et chef d’agence)* 
