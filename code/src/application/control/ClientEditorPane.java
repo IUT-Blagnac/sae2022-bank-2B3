@@ -53,6 +53,13 @@ public class ClientEditorPane {
 			e.printStackTrace();
 		}
 	}
+	
+	/** 
+	 * Démarre la fonction de contrôleur de la page ajouter ou modifier des clients
+	 * @param client : Client qui est modifier 
+	 * @param em : Indique le mode d'édition (ajouter, modifier, supprimer) 
+	 * @return Si le client a changé 
+	 */
 
 	public Client doClientEditorDialog(Client client, EditionMode em) {
 		return this.cepc.displayDialog(client, em);
