@@ -85,7 +85,7 @@ Indique le type des opérations : débit et crédit.
 Controlleur de la fenêtre "Enregistrement d'une opération". Permet de d'executer les commandes doAjouter, doCancel lorsque les bouttons associés sont préssés.
 
 *OperationManagementController.java :* +
-Controlleur de la fenêtre "Gestion des comptes". Permet d'effectuer les débits et crédits evec les commandes doCredit et doDébit et grâce aux boutons qui leurs sont associés.
+Controlleur de la fenêtre "Gestion des opérations". Permet d'effectuer les débits et crédits evec les commandes doCredit et doDébit et grâce aux boutons qui leurs sont associés.
 
 *OperationEditorPane.fxml :* +
 Fichier fxml correspondant à la fenêtre "Enregistrement d'une commande".
@@ -117,6 +117,10 @@ Cette fonctionnalité permet de créer un nouveau compte pour un client déjà e
 * AccessCompteCourant.java
 * CompteEditorPane.fxml
 * ComptesManagement.fxml
+
+==== Detail des resources
+*ComptesManagementController.java :* +
+Controlleur de la fenêtre 
 
 
 === *Effectuer un virement de compte à compte d'un même client* 
