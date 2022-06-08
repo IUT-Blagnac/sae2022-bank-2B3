@@ -157,4 +157,33 @@ public class AccessCompteCourant {
 			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accès", e);
 		}
 	}
+	
+		//inspiré du code au dessus
+	public void insererC ( CompteCourant compte) throws RowNotFoundOrTooManyRowsException, DataAccessException, //même exception que au dessus
+	DatabaseConnexionException, ManagementRuleViolation {
+		try {
+			Connection con = LogToDatabase.getConnexion();//connection à la base de donnée SQL 
+			String sql = "{call CreerCompte (?, ?, ?, ?)}";// ?= param ( 4)
+			CallableStatement cal = con.prepareCall(sql); 
+			
+			//param IN:
+			cal.setInt(1, compte.debitAutorise);//1= valeur du 1er paramètre
+			cal.setDouble(2, compte.solde);
+			cal.setInt(3, compte.idNumCli);
+			 
+			//param OUT:
+			cal.registerOutParameter(4, java.sql.Types.INTEGER); 
+			
+			cal.execute();
+			
+			int result = cal.getInt(4);
+			if(result == -1) {
+				throw new  ManagementRuleViolation(Table.Operation, Order.INSERT,
+						"Erreur de compte : solde est inférieur ou égal à 50", null);
+			}
+			
+		}catch (SQLException e) {
+			throw new DataAccessException(Table.Operation, Order.INSERT, "Erreur accès", e);
+		}
+	}
 }
