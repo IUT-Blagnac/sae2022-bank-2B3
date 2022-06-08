@@ -15,6 +15,9 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.orm.exception.ApplicationException;
 
+/**
+ * Page qui apparait lors d'une exception
+ */
 public class ExceptionDialogController implements Initializable {
 
 	// Etat application
@@ -25,8 +28,14 @@ public class ExceptionDialogController implements Initializable {
 
 	// Données de la fenêtre
 	private ApplicationException ae;
+	
+	/**
+	 * Spécifie toutes les variables de la page
+	 * @param _primaryStage : scene de la page
+	 * @param _dbstate : Sont toutes les données de la session en cours de l'utilisateur
+	 * @param _ae : données de la page
+	 */
 	// Manipulation de la fenêtre
-
 	public void initContext(Stage _primaryStage, DailyBankState _dbstate, ApplicationException _ae) {
 		this.primaryStage = _primaryStage;
 		this.dbs = _dbstate;
@@ -46,6 +55,9 @@ public class ExceptionDialogController implements Initializable {
 		this.txtDetails.setText(sw.toString());
 	}
 
+	/**
+	 * Affiche la page et attend une action de la part de l'utilisateur
+	 */
 	public void displayDialog() {
 		this.primaryStage.showAndWait();
 	}
@@ -67,10 +79,16 @@ public class ExceptionDialogController implements Initializable {
 	@FXML
 	private TextArea txtDetails;
 
+	/**
+	 * Changement de la fonction initialize
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 	}
 
+	/**
+	 * Permet de fermer la page lorsque l'on clique sur le bouton "OK"
+	 */
 	@FXML
 	private void doOK() {
 		this.primaryStage.close();
