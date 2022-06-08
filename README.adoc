@@ -42,10 +42,10 @@ link:http://iutweb.fr/sae.html[consulter ici le sujet de la sae]
 [options="header,footer"]
 |=======================
 |version|rôle     |use case   |cas...|Arnaud|Thomas|Quentin|Lilian
-|1|Chef de projet |CRUD employé  |C  |D     |      |       |
-|1|chef de projet|CRUD employé  |R   |D     |      |       |
-|1|chef de projet|CRUD employé  |U   |D     |      |       |
-|1|chef de projet|CRUD employé  |D   |D     |      |       |
+|1|Chef de projet |CRUD employé  |C  |      |      |       |
+|1|chef de projet|CRUD employé  |R   |      |      |       |
+|1|chef de projet|CRUD employé  |U   |      |      |       |
+|1|chef de projet|CRUD employé  |D   |      |      |       |
 |1|Guichetier| Compte| Créer         |      |      |D      | 
 |1|Guichetier|Compte|Créditer/Débiter|      |D     |       | 
 |1|Guichetier|Compte|Effectuer un virement|D |      |       | 
