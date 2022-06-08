@@ -11,10 +11,21 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.orm.exception.ApplicationException;
 
+/**
+ * Classe qui gère le contrôleur de la page des Exceptions
+ */
+
 public class ExceptionDialog {
 
 	private Stage primaryStage;
 	private ExceptionDialogController edc;
+	
+	/**
+	 * Constructeur de la classe 
+	 * @param _parentStage : la scene qui appelle celle-ci
+	 * @param _dbstate : la session de l'utilisateur connecté
+	 * @param ae : l'exception qui ouvre cette scene
+	 */
 
 	public ExceptionDialog(Stage _parentStage, DailyBankState _dbstate, ApplicationException ae) {
 
@@ -40,6 +51,10 @@ public class ExceptionDialog {
 			e.printStackTrace();
 		}
 	}
+	
+	**
+	 * Permet de lancer la fonction du contrôleur de la page d'exception
+	 */
 
 	public void doExceptionDialog() {
 		this.edc.displayDialog();
