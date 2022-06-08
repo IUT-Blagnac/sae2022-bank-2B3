@@ -105,7 +105,7 @@ Contient les fonction insertCredit et insertDebit qui vérifient que le débit e
 
 === *Créer un compte* (Quentin Guihamassé)
 
-=== *Effectuer un virement de compte à compte d'un même client*
+=== *Effectuer un virement de compte à compte d'un même client* 
 
 === *Clôturer un compte* (Lilian Naud)
 
