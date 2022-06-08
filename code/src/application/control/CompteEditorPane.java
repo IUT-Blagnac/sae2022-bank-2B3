@@ -13,10 +13,20 @@ import javafx.stage.Stage;
 import model.data.Client;
 import model.data.CompteCourant;
 
+/**
+* Classe qui gère le contrôleur de la page de gestion des comptes (ajout et modification d'un compte)
+*/
+
 public class CompteEditorPane {
 
 	private Stage primaryStage;
 	private CompteEditorPaneController cepc;
+	
+	/**
+	 * Constructeur de la classe 
+	 * @param _parentStage : la scene qui appelle celle-ci
+	 * @param _dbstate : la session en cours de l'utilisateur connecté
+	 */
 
 	public CompteEditorPane(Stage _parentStage, DailyBankState _dbstate) {
 
@@ -42,6 +52,14 @@ public class CompteEditorPane {
 			e.printStackTrace();
 		}
 	}
+	
+		/**
+	 * Lance la fonction du contrôleur de la page d'ajout ou de modification des comptes pour afficher la scene
+	 * @param client : le client à qui appartient le compte
+	 * @param cpte : le compte à modifier
+	 * @param em : indique le mode d'édition (ajout, modification ou suppression)
+	 * @return le client modifié
+	 */
 
 	public CompteCourant doCompteEditorDialog(Client client, CompteCourant cpte, EditionMode em) {
 		return this.cepc.displayDialog(client, cpte, em);
