@@ -22,6 +22,9 @@ import javafx.stage.WindowEvent;
 import model.data.CompteCourant;
 import model.data.Operation;
 
+/**
+ * Page de gestion des opérations (débit ou crédit)
+ */
 public class OperationEditorPaneController implements Initializable {
 
 	// Etat application
@@ -35,6 +38,11 @@ public class OperationEditorPaneController implements Initializable {
 	private CompteCourant compteEdite;
 	private Operation operationResultat;
 
+	/**
+	 * Spécifie toutes les variables de la page
+	 * @param _primaryStage : scene de la page
+	 * @param _dbstate : Sont toutes les données de la session en cours de l'utilisateur
+	 */
 	// Manipulation de la fenêtre
 	public void initContext(Stage _primaryStage, DailyBankState _dbstate) {
 		this.primaryStage = _primaryStage;
@@ -123,16 +131,26 @@ public class OperationEditorPaneController implements Initializable {
 	@FXML
 	private Button btnCancel;
 
+	/**
+	 * Changement de la fonction initialize
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 	}
 
+	/**
+	 * Annule l'opération en cours et ferme la page
+	 */
 	@FXML
 	private void doCancel() {
 		this.operationResultat = null;
 		this.primaryStage.close();
 	}
 
+	/** Fonction qui est appelée lorsque l'utilisateur valide son opération 
+	 * Vérifie les entrées faites
+	 * Créer si tout est correcte les opérations
+	 */
 	@FXML
 	private void doAjouter() {
 		switch (this.categorieOperation) {
