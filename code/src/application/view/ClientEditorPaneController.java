@@ -24,6 +24,9 @@ import model.orm.exception.ApplicationException;
 import model.orm.exception.Order;
 import model.orm.exception.Table;
 
+/**
+ * Page de gestion des clients (ajout et modification)
+ */
 public class ClientEditorPaneController implements Initializable {
 
 	// Etat application
@@ -37,6 +40,11 @@ public class ClientEditorPaneController implements Initializable {
 	private EditionMode em;
 	private Client clientResult;
 
+	/**
+	 * Spécifie toutes les variables de la page
+	 * @param _primaryStage : scene de la page
+	 * @param _dbstate : Sont toutes les données de la session en cours de l'utilisateur
+	 */
 	// Manipulation de la fenêtre
 	public void initContext(Stage _primaryStage, DailyBankState _dbstate) {
 		this.primaryStage = _primaryStage;
@@ -44,10 +52,19 @@ public class ClientEditorPaneController implements Initializable {
 		this.configure();
 	}
 
+	/**
+	 * Ferme la page
+	 */
 	private void configure() {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 	}
 
+	/**
+	 * Affiche la page et attend une action de la part de l'utilisateur
+	 * @param client : le client qui est modifié
+	 * @param mode : le mode de modification
+	 * @return : le client modifié
+	 */
 	public Client displayDialog(Client client, EditionMode mode) {
 
 		this.em = mode;
@@ -164,6 +181,9 @@ public class ClientEditorPaneController implements Initializable {
 	@FXML
 	private Button butCancel;
 
+	/**
+	 * Changement de la fonction initialize
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 	}
