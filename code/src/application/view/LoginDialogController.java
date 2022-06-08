@@ -14,6 +14,9 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Employe;
 
+/**
+ * Fenetre de connexion
+ */
 public class LoginDialogController implements Initializable {
 
 	// Etat application
@@ -25,6 +28,13 @@ public class LoginDialogController implements Initializable {
 
 	// Données de la fenêtre
 
+	/**
+	 * Définit les variables de la fenetre
+	 * 
+	 * @param _primaryStage : scene
+	 * @param _ld : fenetre
+	 * @param _dbstate : données de la session de l'utilisateur
+	 */
 	// Manipulation de la fenêtre
 	public void initContext(Stage _primaryStage, LoginDialog _ld, DailyBankState _dbstate) {
 		this.primaryStage = _primaryStage;
@@ -37,6 +47,9 @@ public class LoginDialogController implements Initializable {
 		this.primaryStage.setOnCloseRequest(e -> this.closeWindow(e));
 	}
 
+	/**
+	 * Affiche la page et attend une action
+	 */
 	public void displayDialog() {
 		this.primaryStage.showAndWait();
 	}
@@ -56,6 +69,9 @@ public class LoginDialogController implements Initializable {
 	@FXML
 	private Label lblMessage;
 
+	/**
+	 * Redéfinition de la fonction initialize
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 	}
@@ -66,6 +82,9 @@ public class LoginDialogController implements Initializable {
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Permet de remplir le mot de passe et le login des utilisateurs
+	 */
 	@FXML
 	private void doOK() {
 		String login = this.txtLogin.getText().trim();
@@ -84,6 +103,9 @@ public class LoginDialogController implements Initializable {
 		}
 	}
 
+	/**
+	 * Met un carré rouge si les champs sont mal remplis
+	 */
 	private void afficheErreur(String texte) {
 		this.lblMessage.setText(texte);
 		this.lblMessage.setStyle("-fx-text-fill:red; -fx-font-weight: bold;");
