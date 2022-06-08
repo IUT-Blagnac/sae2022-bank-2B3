@@ -14,11 +14,21 @@ import model.orm.AccessEmploye;
 import model.orm.exception.ApplicationException;
 import model.orm.exception.DatabaseConnexionException;
 
+/**
+ * Classe qui gère le contrôleur de la page de connexion
+ */
+
 public class LoginDialog {
 
 	private Stage primaryStage;
 	private DailyBankState dbs;
 	private LoginDialogController ldc;
+	
+	 /**
+	 * Constructeur de la classe
+	 * @param _parentStage : la scene qui appelle celle-ci
+	 * @param _dbstate : la session de l'utilisateur qui est connecté
+	 */
 
 	public LoginDialog(Stage _parentStage, DailyBankState _dbstate) {
 		this.dbs = _dbstate;
@@ -44,10 +54,21 @@ public class LoginDialog {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 *  Permet de lancer la fonction du contrôleur de la page de connexion 
+	 */
 
 	public void doLoginDialog() {
 		this.ldc.displayDialog();
 	}
+	
+	 /**
+	 * Recherche si un employé existe avec le login et le password rentrer par l'utilisation
+	 * @param login : le login de l'employé
+	 * @param password : le mot de passe de l'employé
+	 * @return un Employé
+	 */
 
 	public Employe chercherParLogin(String login, String password) {
 		Employe employe = null;
