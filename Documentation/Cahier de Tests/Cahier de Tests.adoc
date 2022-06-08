@@ -178,7 +178,7 @@ l’accueil|ok
 |6a|Sélectionner le bouton "enregistrer Débit"|la page "Enregistrement d'une opérations" s'ouvre|ok
 |6b|Sélectionner le bouton "enregister Crédit"|la page "Enregistrement d'une opérations" s'ouvre|ok
 |7a|Entrer le montant et choisisez le type d'opération puis sélectionner le bouton "effectuer un débit"|le débit est bien effectué (retour à la page "Gestion des opérations")|ok
-|7b|Entrer le montant et choisisez le type d'opération puis sélectionner le bouton "effectuer un crédit"|le crésit est bien effectué (retour à la page "Gestion des opérations")|nok
+|7b|Entrer le montant et choisisez le type d'opération puis sélectionner le bouton "effectuer un crédit"|le crésit est bien effectué (retour à la page "Gestion des opérations")|ok
 |=======================
 ****
 
