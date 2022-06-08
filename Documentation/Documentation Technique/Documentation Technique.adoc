@@ -120,7 +120,9 @@ Cette fonctionnalité permet de créer un nouveau compte pour un client déjà e
 
 ==== Detail des resources
 *ComptesManagementController.java :* +
-Controlleur de la fenêtre 
+Controlleur de la fenêtre "Gestion des comptes". On peut gérer les comptes grâce aux boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte".
+
+*ComptesManagement.java*
 
 
 === *Effectuer un virement de compte à compte d'un même client* (Arnaud Dubayle)
