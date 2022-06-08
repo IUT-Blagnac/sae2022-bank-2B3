@@ -123,10 +123,10 @@ Cette fonctionnalité permet de créer un nouveau compte pour un client déjà e
 Controlleur de la fenêtre "Gestion des comptes". On peut gérer les comptes grâce aux boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte".
 
 *ComptesManagement.java* +
-
+Permet de gérer les comptes d'un client grâce aux fonctions "getComptesDunClient", "creerCompte", et aux méthodes "gererOperations", "doComptesManagementDialog".
 
 *AccessCompteCourant.java* +
-
+Permet de gérer l'accès aux comptes d'un client grâce aux méthodes "insererC", "updateCompteCourant".
 
 *CompteEditorPane.fxml* +
 Page FXML qui correspond à la fenêtre "Gestion d'un compte".
