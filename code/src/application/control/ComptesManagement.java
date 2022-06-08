@@ -71,7 +71,7 @@ public class ComptesManagement {
 		compte = cep.doCompteEditorDialog(this.clientDesComptes, null, EditionMode.CREATION);
 		if (compte != null) {
 			try {
-				AccessCompteCourant accèsC = new AccessCompteCourant(); //on crée un accès au compte courant
+				AccessCompteCourant accèsC = new AccessCompteCourant(); //on crée un accès au compte courant avec "AccessCompteCourant"
 				accèsC.insererC(compte); //on utilise la méthode pour insérer un nouveau compte
 				
 				// if JAMAIS vrai
