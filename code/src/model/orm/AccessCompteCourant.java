@@ -164,17 +164,17 @@ public class AccessCompteCourant {
 		try {
 			Connection con = LogToDatabase.getConnexion();//connection à la base de donnée SQL 
 			String sql = "{call CreerCompte (?, ?, ?, ?)}";// ?= param ( 4)
-			CallableStatement cal = con.prepareCall(sql); 
+			CallableStatement call = con.prepareCall(sql);//call = requête "textuelle"
 			
 			//param IN:
-			cal.setInt(1, compte.debitAutorise);//1= valeur du 1er paramètre
-			cal.setDouble(2, compte.solde);
-			cal.setInt(3, compte.idNumCli);
+			call.setInt(1, compte.debitAutorise);//1= valeur du 1er paramètre
+			call.setDouble(2, compte.solde);
+			call.setInt(3, compte.idNumCli);
 			 
 			//param OUT:
-			cal.registerOutParameter(4, java.sql.Types.INTEGER); 
+			call.registerOutParameter(4, java.sql.Types.INTEGER); 
 			
-			cal.execute();
+			call.execute();
 			
 			int result = cal.getInt(4);
 			if(result == -1) {
