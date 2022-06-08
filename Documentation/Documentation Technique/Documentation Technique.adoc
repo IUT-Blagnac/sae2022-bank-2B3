@@ -105,16 +105,6 @@ Contient les fonction insertCredit et insertDebit qui vérifient que le débit e
 
 === *Créer un compte* (Quentin Guihamassé)
 
-=== *Effectuer un virement de compte à compte d'un même client* 
-
-=== *Clôturer un compte* (Lilian Naud)
-
-=== *Gérer (CRUD) les employés (guichetier et chef d’agence)* (Arnaud Dubayle)
-
-
-
-=== *Créer un nouveau compte* (Quentin Guilhamassé)
-
 ==== Description de la fonctionalité
 
 Cette fonctionnalité permet de créer un nouveau compte pour un client déjà existant. On peut effectuer plusieurs opérations sur ce compte comme choisir un découvert autorisé et un solde( premier dépot). Ce solde doit être strictement supérieur à 50 euros. L'id du client, l'id d'agence et le numéro de compte son choisis au préalable et ne son pas modifiable. Une fois ajouté, le nouveau compte sera affiché dans le gestionnaire de comptes du client.
@@ -126,3 +116,10 @@ Cette fonctionnalité permet de créer un nouveau compte pour un client déjà e
 * AccessCompteCourant.java
 * CompteEditorPane.fxml
 * ComptesManagement.fxml
+
+
+=== *Effectuer un virement de compte à compte d'un même client* 
+
+=== *Clôturer un compte* (Lilian Naud)
+
+=== *Gérer (CRUD) les employés (guichetier et chef d’agence)* (Arnaud Dubayle)
