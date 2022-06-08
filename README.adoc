@@ -47,13 +47,13 @@ link:http://iutweb.fr/sae.html[consulter ici le sujet de la sae]
 |1|chef de projet|CRUD employé  |U   |      |      |       |
 |1|chef de projet|CRUD employé  |D   |      |      |       |
 |1|Guichetier| Compte| Créer         |      |      |D      | 
-|1|Guichetier|Compte|Créditer/Débiter|      |D     |       | 
+|1|Guichetier|Compte|Créditer/Débiter|      |F     |       | 
 |1|Guichetier|Compte|Effectuer un virement|D |      |       | 
 |1|Guichetier|Compte|Clôturer        |      |      |       |D
 |2|Chef d’Agence|Compte|Débit exceptionnel| |      |       | 
 |2|Chef d’Agence|Emprunt|Simuler emprunt|   |      |       | 
 |2|Chef d’Agence|Emprunt| Simuler assurance||      |       | 
-|2|Guichetier| Compte | Relevé PDF||D | | 
+|2|Guichetier| Compte | Relevé PDF|| | | 
 |2|Guichetier| CRUD Prélèvement | C|| | | 
 |2|Guichetier| CRUD Prélèvement | R|| | | 
 |2|Guichetier| CRUD Prélèvement | U|| | | 
