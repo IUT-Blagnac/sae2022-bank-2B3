@@ -20,6 +20,9 @@ import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.CompteCourant;
 
+/**
+ * Page de gestion des comptes
+ */
 public class CompteEditorPaneController implements Initializable {
 
 	// Etat application
@@ -34,6 +37,11 @@ public class CompteEditorPaneController implements Initializable {
 	private CompteCourant compteEdite;
 	private CompteCourant compteResult;
 
+	/**
+	 * Spécifie toutes les variables de la page
+	 * @param _primaryStage : scene de la page
+	 * @param _dbstate : Sont toutes les données de la session en cours de l'utilisateur
+	 */
 	// Manipulation de la fenêtre
 	public void initContext(Stage _primaryStage, DailyBankState _dbstate) {
 		this.primaryStage = _primaryStage;
@@ -48,6 +56,13 @@ public class CompteEditorPaneController implements Initializable {
 		this.txtSolde.focusedProperty().addListener((t, o, n) -> this.focusSolde(t, o, n));
 	}
 
+	/**
+	 * Affiche la fenetre et attend une action de la part de l'utilisateur
+	 * @param client : le client qui possède le compte
+	 * @param cpte : le compte à modifier
+    	 * @param mode : le mode de modification
+	 * @return : le client modifié
+	 */
 	public CompteCourant displayDialog(Client client, CompteCourant cpte, EditionMode mode) {
 		this.clientDuCompte = client;
 		this.em = mode;
@@ -162,16 +177,25 @@ public class CompteEditorPaneController implements Initializable {
 	@FXML
 	private Button btnCancel;
 
+	/**
+	 * Changement de la fonction initialize
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 	}
 
+	/**
+	 * Permet de fermer la page si le resultat est null
+	 */
 	@FXML
 	private void doCancel() {
 		this.compteResult = null;
 		this.primaryStage.close();
 	}
 
+	/**
+	 * Permet de faire le CRUD d'un client
+	 */
 	@FXML
 	private void doAjouter() {
 		switch (this.em) {
@@ -195,6 +219,10 @@ public class CompteEditorPaneController implements Initializable {
 
 	}
 
+	/**
+	 * Si la saisie est valide
+	 * @return vrai
+	 */
 	private boolean isSaisieValide() {
 
 		return true;
