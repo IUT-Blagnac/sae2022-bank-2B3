@@ -105,7 +105,7 @@ Contient les fonction insertCredit et insertDebit qui vérifient que le débit e
 
 
 
-=== *Créer un compte* (Quentin Guihamassé)
+=== *Créer un compte* (Quentin Guihamassé) +++
 
 ==== Description de la fonctionalité
 
