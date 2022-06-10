@@ -52,7 +52,7 @@ public class ExceptionDialog {
 		}
 	}
 	
-	**
+	/**
 	 * Permet de lancer la fonction du contrôleur de la page d'exception
 	 */
 
