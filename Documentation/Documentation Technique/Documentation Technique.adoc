@@ -157,7 +157,7 @@ Cette fonctionnalité permet de supprimer un compte existant pour un client. Une
 Controlleur de la fenêtre "Gestion des comptes". On peut gérer les comptes grâce aux boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte".
 
 *ComptesManagement.java* +
-Permet de gérer les comptes d'un client grâce aux fonctions "getComptesDunClient", "creerCompte", et aux méthodes "gererOperations", "doComptesManagementDialog".
+Permet de gérer les comptes d'un client grâce aux fonctions "getComptesDunClient", "creerCompte", "supprimerCompte" et aux méthodes "gererOperations", "doComptesManagementDialog".
 
 *ComptesManagement.fxml* +
 Page FXML qui correspond à la fenêtre "Gestion des comptes".
