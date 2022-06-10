@@ -110,6 +110,9 @@ Contient les fonction insertCredit et insertDebit qui vérifient que le débit e
 
 Cette fonctionnalité permet de créer un nouveau compte pour un client déjà existant. On peut effectuer plusieurs opérations sur ce compte comme choisir un découvert autorisé et un solde( premier dépot). Ce solde doit être strictement supérieur à 50 euros. L'id du client, l'id d'agence et le numéro de compte son choisis au préalable et ne son pas modifiable. Une fois ajouté, le nouveau compte sera affiché dans le gestionnaire de comptes du client.
 
+==== Use Case
+image:https://cdn.discordapp.com/attachments/936251588803166250/984740752217215006/use_case.png[alt="usecase"]
+
 ==== Classes et ressources utilisées
 .Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
 * ComptesManagementController.java
