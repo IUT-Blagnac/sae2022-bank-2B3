@@ -145,6 +145,11 @@ Cette fonctionnalité permet de supprimer un compte existant pour un client. Une
 
 ==== Classes et ressources utilisées
 .Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
+* ComptesManagementController.java
+* ComptesManagement.java
+* AccessCompteCourant.java
+* CompteEditorPane.fxml
+* ComptesManagement.fxml
 
 ==== Detail des resources
 
