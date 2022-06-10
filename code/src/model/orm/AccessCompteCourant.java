@@ -176,7 +176,7 @@ public class AccessCompteCourant {
 			
 			call.execute();
 			
-			int result = cal.getInt(4);
+			int result = call.getInt(4);
 			if(result == -1) {
 				throw new  ManagementRuleViolation(Table.Operation, Order.INSERT,
 						"Erreur de compte : solde est inférieur ou égal à 50", null);
