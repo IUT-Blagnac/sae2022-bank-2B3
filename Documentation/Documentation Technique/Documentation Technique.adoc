@@ -139,4 +139,13 @@ Page FXML qui correspond à la fenêtre "Gestion des comptes".
 
 === *Clôturer un compte* (Lilian Naud)
 
+==== Description de la fonctionalité
+
+Cette fonctionnalité permet de supprimer un compte existant pour un client. Une fois supprimé, le compte ne sera plus affiché dans le gestionnaire de comptes du client.
+
+==== Classes et ressources utilisées
+.Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
+
+==== Detail des resources
+
 === *Gérer (CRUD) les employés (guichetier et chef d’agence)* 
