@@ -33,6 +33,30 @@ L'application *Daily Bank* est un réseau français de 100 agences bancaires. Il
 L'application finale doit pouvoir gérer les comptes bancaires des clients de la banque. Notre client, *BankUniv*, possède déjà une application mobile qui se nomme DailyBank. Malheuresement, celle-ci est assez limitée en termes de fonctionnalités et ne répond plus aux nouveaux besoins exprimées par les banques. Les utilisateurs de l'application sont les guichetiers et les directeurs d'agence. Les guichetiers peuvent effectués des opérations classique et le second posséde les mêmes fonctionnalitées.
 ****
 
+=== Structuration des packages de l'application
+
+application
+DailyBank : main() de départ permettant de lancer l'application
+
+* *`application.control`*
+Contrôleur et accès aux données : Gérer les fonctionnalités de l'application
+
+* *`application.view`*
+Vue des fichiers fxml de l'application et des contrôleurs associés 
+Une vue est associé à chaque page FXML
+
+* *`application.tools`*
+aides pour les autres packages application.view et application.control
+
+* *`model.data`*
+Classes java se joignant aux tablse de la base de donnée. Une table ⇒ 1 classe.
+
+* *`model.orm`*
+Classes permettant d'acceder à la base de donnée. 
+
+* *`model.exception`*
+Classes des exceptions d’accès à la base de données
+
 == *Structure du projet*
 
 ====
@@ -90,7 +114,6 @@ Controlleur de la fenêtre "Gestion des opérations". Permet d'effectuer les dé
 *OperationEditorPane.fxml :* +
 Fichier fxml correspondant à la fenêtre "Enregistrement d'une commande".
 
-
 *OperationManagement.fxml :* +
 fichier fxml correspondant à la fenêtre "Gestion des opérations".
 
@@ -115,30 +138,75 @@ image:https://cdn.discordapp.com/attachments/936251588803166250/9847407522172150
 
 ==== Classes et ressources utilisées
 .Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
-* ComptesManagementController.java
-* ComptesManagement.java
-* AccessCompteCourant.java
-* CompteEditorPane.fxml
-* ComptesManagement.fxml
+* `ComptesManagementController.java`
+* `ComptesManagement.java`
+* `AccessCompteCourant.java`
+* `CompteEditorPane.fxml`
+* `ComptesManagement.fxml`
 
 ==== Detail des resources
-*ComptesManagementController.java :* +
+*`ComptesManagementController.java :`* +
 Controlleur de la fenêtre "Gestion des comptes". On peut gérer les comptes grâce aux boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte".
 
-*ComptesManagement.java* +
+*`ComptesManagement.java`* +
 Permet de gérer les comptes d'un client grâce aux fonctions "getComptesDunClient", "creerCompte", et aux méthodes "gererOperations", "doComptesManagementDialog".
 
-*AccessCompteCourant.java* +
+*`AccessCompteCourant.java`* +
 Permet de gérer l'accès aux comptes d'un client grâce aux méthodes "insererC", "updateCompteCourant".
 
-*CompteEditorPane.fxml* +
+*`CompteEditorPane.fxml`* +
 Page FXML qui correspond à la fenêtre "Gestion d'un compte".
 
-*ComptesManagement.fxml* +
+*`ComptesManagement.fxml`* +
 Page FXML qui correspond à la fenêtre "Gestion des comptes".
 
 
 === *Effectuer un virement de compte à compte d'un même client* (Arnaud Dubayle)
+
+==== Use Case
+
+image:https://cdn.discordapp.com/attachments/968075822453911572/985278678554542171/unknown.png[1]
+
+==== Description de la fonctionalité
+Cette fonctionnalité permet de faire un virement d'argent de compte à compte d'une même agence bancaire.
+Conditions de validation de l’opération : Montant entré non null, positif
+
+==== *Classes et ressources utilisées*
+
+* *`CategorieApplication.java`*
+* *`OperationManagement.java`*
+* *`OperationManagementController.java`*
+* *`OperationManagement.fxml`* 
+* *`Operation.java`* 
+* *`AccessOperation.java`* * 
+* *`ConstantIHM.java`* 
+* *`OpérationEditorPane.java`*
+
+==== *Detail des resources utilisées* +
+
+*`CategorieApplication.java`* +
+Ajout du mode d'opération "virement"
+
+*`OperationManagement.java`* +
+Affiche la page
+
+*`OperationManagementController.java`* +
+Transfere les informations à la classe `OperationManagement`
+
+*`OperationManagement.fxml`* +
+Affiche la page 
+
+*`Operation.java`* +
+Ajout d'un idCompteVirement
+
+*`AccessOperation.java`* +
+Permet de créer une enregistrement de virement
+
+*`ConstantIHM.java`* +
+Permet de créer une operation pour effectuer une virement
+
+*`OpérationEditorPane.java`* +
+Affiche la page pour créer l'opération et fait parvenir les informations au contrôleur de vue
 
 === *Clôturer un compte* (Lilian Naud)
 
@@ -148,18 +216,18 @@ Cette fonctionnalité permet de supprimer un compte existant pour un client. Une
 
 ==== Classes et ressources utilisées
 .Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
-* ComptesManagementController.java
-* ComptesManagement.java
-* ComptesManagement.fxml
+* `ComptesManagementController.java`
+* `ComptesManagement.java`
+* `ComptesManagement.fxml`
 
 ==== Detail des resources
-*ComptesManagementController.java :* +
+*`ComptesManagementController.java :`* +
 Controlleur de la fenêtre "Gestion des comptes". On peut gérer les comptes grâce aux boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte".
 
-*ComptesManagement.java* +
+*`ComptesManagement.java`* +
 Permet de gérer les comptes d'un client grâce aux fonctions "getComptesDunClient", "creerCompte", "supprimerCompte" et aux méthodes "gererOperations", "doComptesManagementDialog".
 
-*ComptesManagement.fxml* +
+*`ComptesManagement.fxml`* +
 Page FXML qui correspond à la fenêtre "Gestion des comptes".
 
 === *Gérer (CRUD) les employés (guichetier et chef d’agence)* 
