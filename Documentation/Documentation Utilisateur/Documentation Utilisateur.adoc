@@ -98,7 +98,11 @@ image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Do
 
 Une nouvelle page apparait et permet à l’utilisateur d’indiquer le montant à transférer
 
-image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/1.png[2]
+image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/1.png[3]
+
+En sélectionnant "Annuler virement" vous annuler l’opération. Attention aucun retour n'est possible une fois l'argent envoyer.
+
+Afin que l’opération se valide correctement, le montant doit être positif, le compte du destinataire ne doit pas être cloturé le compte transacteur doitdoit être suffisamment approvisionné pour faire le virement.
 
 === *Clôturer un compte* (Lilian Naud)
 
