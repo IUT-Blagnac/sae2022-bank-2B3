@@ -88,10 +88,20 @@ Selectionnez le type d'opérations dans le menu déroulant, saisissez un montant
 
 === *Créer un compte* (Quentin Guihamassé)
 
-=== *Effectuer un virement de compte à compte d'un même client*
+=== *Effectuer un virement de compte à compte d'un même client* (Arnaud Dubayle)
+
+Les virements comptes à compte sont effectués vers les comptes d'une même agence. Afin de transférer de l'argent entre deux comptes, l'utilisateur doit ouvrir le menu  du compte client, choisir en sélectionnant le bouton "Voir opérations" puis "Effectuer un virement".
+
+image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/1.png[1]
+
+image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/1.png[2]
+
+Une nouvelle page apparait et permet à l’utilisateur d’indiquer le montant à transférer
+
+image:https://github.com/IUT-Blagnac/sae2022-bank-2B3/blob/main/Documentation/Documentation%20Utilisateur/images/1.png[2]
 
 === *Clôturer un compte* (Lilian Naud)
 
-=== *Gérer (CRUD) les employés (guichetier et chef d’agence)* (Arnaud Dubayle)
+=== *Gérer (CRUD) les employés (guichetier et chef d’agence)* 
 
 
