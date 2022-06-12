@@ -93,21 +93,21 @@ Dans sa colonne il doit remplir la ligne correspondant à chaque partie qu'il a 
 |         | Gantt V2    |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/GANTT/GANTT%20V2%20et%20V3.pdf[GANTT V2]                               |     
 |         | Gantt V3 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/GANTT/GANTT%20V2%20et%20V3.pdf[GANTT V3]         |     
 |         | Doc. Tec. V1 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Technique/Documentation%20Technique.adoc[Doc. Tec. V1]      |    
-|         | Doc User V1    |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Utilisateur/Documentation%20Utilisateur.adoc[Doc User V1]       |
+|         | Doc Uitl V1    |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Utilisateur/Documentation%20Utilisateur.adoc[Doc User V1]       |
 |         | Recette V1  |  link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Cahier%20de%20Tests/Cahier%20de%20Tests.adoc[Recette V1]                      | 
 |         | Suivi projet|   | 
 | 22/05   | Gantt V2  à jour    |       | 
-|         | Doc. Util. V1 |         |         
-|         | Doc. Tec. V1 |                |     
+|         | Doc. Util. V1 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Utilisateur/Documentation%20Utilisateur.adoc[Doc User V1]         |         
+|         | Doc. Tec. V1 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Technique/Documentation%20Technique.adoc[Doc. Tec. V1]                |     
 |         | Code V1     |                     | 
 |         | Recette V1 |                      | 
 |         | Gantt V3 à jour   |                      | 
 |         | `jar` projet |    | 
 | 05/06   | Gantt V3 à Jour  |    |  
-|         | Doc. Util. V2 |         |           
-|         | Doc. Tec. V2 |    |     
+|         | Doc. Util. V2 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Utilisateur/Documentation%20Utilisateur.adoc[Doc User V2]         |           
+|         | Doc. Tec. V2 |link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Documentation%20Technique/Documentation%20Technique.adoc[Doc. Tec. V2]    |     
 |         | Code V2     |                       |
-|         | Recette V2  |   |
+|         | Recette V2  | link:https://github.com/IUT-Blagnac/sae2022-bank-beluga/blob/main/Documentation/Cahier%20de%20Tests/Cahier%20de%20Tests.adoc[Recette V2]   |
 |         | `jar` projet |     |
 |12/06   | Gantt V3 à Jour  |    |  
 |         | Doc. Util. V3 |         |           
