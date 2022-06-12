@@ -10,6 +10,7 @@ public class Operation {
 	public Date dateValeur;
 	public int idNumCompte;
 	public String idTypeOp;
+	public String idCptVirement;
 
 	public Operation(int idOperation, double montant, Date dateOp, Date dateValeur, int idNumCompte, String idTypeOp) {
 		super();
