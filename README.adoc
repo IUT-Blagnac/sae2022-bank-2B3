@@ -48,7 +48,7 @@ link:http://iutweb.fr/sae.html[consulter ici le sujet de la sae]
 |1|chef de projet|CRUD employé  |D   |      |      |       |
 |1|Guichetier| Compte| Créer         |      |      |F      | 
 |1|Guichetier|Compte|Créditer/Débiter|      |F     |       | 
-|1|Guichetier|Compte|Effectuer un virement|D |      |       | 
+|1|Guichetier|Compte|Effectuer un virement|F |      |       | 
 |1|Guichetier|Compte|Clôturer        |      |      |       |D
 |2|Chef d’Agence|Compte|Débit exceptionnel| |      |       | 
 |2|Chef d’Agence|Emprunt|Simuler emprunt|   |      |       | 
