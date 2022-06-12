@@ -164,23 +164,28 @@ public class AccessCompteCourant {
 	DatabaseConnexionException, ManagementRuleViolation {
 		try {
 			Connection con = LogToDatabase.getConnexion();//connection à la base de donnée SQL 
-			String sql = "{call CreerCompte (?, ?, ?, ?)}";// ?= param ( 4)
+			String sql = "{call CreerCompte (?, ?, ?, ?)}";// ? = 4 paramètres
 			CallableStatement call = con.prepareCall(sql);//call = requête "textuelle"
-			
+			compte.debitAutorise = - compte.debitAutorise;
 			//param IN:
-			call.setInt(1, compte.debitAutorise);//1= valeur du 1er paramètre
-			call.setDouble(2, compte.solde);
-			call.setInt(3, compte.idNumCli);
+			call.setInt(1, compte.debitAutorise);//1er paramètre (debitAtorise)
+			call.setDouble(2, compte.solde);//2eme paramètre (solde)
+			call.setInt(3, compte.idNumCli);//3eme paramètre (idNumCli)
 			 
 			//param OUT:
-			call.registerOutParameter(4, java.sql.Types.INTEGER); 
+			call.registerOutParameter(4, java.sql.Types.INTEGER);//4eme paramètre 
 			
-			call.execute();
+			call.execute();//exécution
 			
 			int result = call.getInt(4);
-			if(result == -1) {
-				throw new  ManagementRuleViolation(Table.Operation, Order.INSERT,
-						"Erreur de compte : solde est inférieur ou égal à 50", null);
+			if(result == -1) {//on traite l'erreur dû au solde ( <=50)
+				//boîte d'alerte
+				Alert alert = new Alert(AlertType.WARNING);
+				alert.setTitle("Boîte de dialogue");
+				alert.setHeaderText("Attention");
+				alert.setContentText("Le solde est inférieur ou égal à 50€");   
+
+				alert.showAndWait(); 
 			}
 			
 		}catch (SQLException e) {
