@@ -88,6 +88,9 @@ Selectionnez le type d'opérations dans le menu déroulant, saisissez un montant
 
 === *Créer un compte* (Quentin Guihamassé)
 
+==== Etape 1 :
+
+
 === *Effectuer un virement de compte à compte d'un même client* (Arnaud Dubayle)
 
 Les virements comptes à compte sont effectués vers les comptes d'une même agence. Afin de transférer de l'argent entre deux comptes, l'utilisateur doit ouvrir le menu  du compte client, choisir en sélectionnant le bouton "Voir opérations" puis "Effectuer un virement".
