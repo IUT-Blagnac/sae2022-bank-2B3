@@ -226,7 +226,7 @@ l’accueil|ok
 |=======================
 |*Cas de test*|   01-04
 |*Titre*      |  Clôturer un compte client
-|*objectif*   |  Vérifier la clôture d'un compte client
+|*objectif*   |  Vérifier la clôture d'un compte client 
 |=======================
 |=======================
 |*Etapes* |*Action* |*Comportment attendu* |*Résultat*
