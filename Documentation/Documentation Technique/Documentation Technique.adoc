@@ -219,6 +219,7 @@ Cette fonctionnalité permet de supprimer un compte existant pour un client. Une
 * `ComptesManagementController.java`
 * `ComptesManagement.java`
 * `ComptesManagement.fxml`
+* `AccesCompteCourant`
 
 ==== Detail des resources
 *`ComptesManagementController.java :`* +
@@ -229,5 +230,8 @@ Permet de gérer les comptes d'un client grâce aux fonctions "getComptesDunClie
 
 *`ComptesManagement.fxml`* +
 Page FXML qui correspond à la fenêtre "Gestion des comptes".
+
+*`AccesCompteCourant`* +
+Permet d'accéder aux comptes d'un client et d'en faire les modifications souhaitées.
 
 === *Gérer (CRUD) les employés (guichetier et chef d’agence)* 
