@@ -208,7 +208,7 @@ Permet de créer une operation pour effectuer une virement
 *`OpérationEditorPaneController.java`* +
 Affiche la page pour créer l'opération et fait parvenir les informations au contrôleur de vue
 
-=== *Clôturer un compte* (Lilian Naud)
+=== *Clôturer un compte* (Documentation: Lilian Naud, Code: Quentin Guilhamassé)
 
 ==== Description de la fonctionalité
 
