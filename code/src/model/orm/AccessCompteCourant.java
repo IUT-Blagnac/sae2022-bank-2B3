@@ -159,7 +159,8 @@ public class AccessCompteCourant {
 		}
 	}
 	
-		//inspiré du code au dessus
+	
+	//inspiré du code au dessus
 	public void insererC ( CompteCourant compte) throws RowNotFoundOrTooManyRowsException, DataAccessException, //même exception que au dessus
 	DatabaseConnexionException, ManagementRuleViolation {
 		try {
@@ -190,6 +191,33 @@ public class AccessCompteCourant {
 			
 		}catch (SQLException e) {
 			throw new DataAccessException(Table.Operation, Order.INSERT, "Erreur accès", e);
+		}
+	}
+	
+	
+	public void cloturerCompteCourant(CompteCourant cc)
+			throws RowNotFoundOrTooManyRowsException, DataAccessException, DatabaseConnexionException {
+		try {
+
+			Connection con = LogToDatabase.getConnexion();
+
+			String query = "UPDATE CompteCourant SET solde = 0, estCloture = 'O' " + "WHERE idNumCompte = ?";
+
+			PreparedStatement pst = con.prepareStatement(query);
+			pst.setInt(1, cc.idNumCompte);
+
+			System.err.println(query);
+
+			int result = pst.executeUpdate();
+			pst.close();
+			if (result != 1) {
+				con.rollback();
+				throw new RowNotFoundOrTooManyRowsException(Table.CompteCourant, Order.UPDATE,
+						"Update anormal (update de moins ou plus d'une ligne)", null, result);
+			}
+			con.commit();
+		} catch (SQLException e) {
+			throw new DataAccessException(Table.CompteCourant, Order.UPDATE, "Erreur accï¿½s", e);
 		}
 	}
 }
