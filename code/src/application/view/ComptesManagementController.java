@@ -113,7 +113,7 @@ public class ComptesManagementController implements Initializable {
 		if (compteS.solde != 0 || compteS == null) {//si le compte n'a pas un solde égal à 0€ ou n'existe pas, il ne peut pas être supprimé
 			Alert confirmBox = new Alert(AlertType.ERROR);
 			confirmBox.setTitle("Cloturer Compte");
-			confirmBox.setHeaderText("Impossible de cloturer le compte avec un solde diffÃ©rent de 0");
+			confirmBox.setHeaderText("Impossible de cloturer le compte avec un solde différent de 0");
 			confirmBox.showAndWait();
 
 		} else {
