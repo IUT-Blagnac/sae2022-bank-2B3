@@ -238,22 +238,6 @@ l’accueil|ok
 |=======================
 ****
 
-****
-[options="header,footer"]
-|=======================
-|*Cas de test*|   01-05
-|*Titre*      |  Clôturer un compte client
-|*objectif*   |  Vérifier la clôture d'un compte client
-|=======================
-|=======================
-|*Etapes* |*Action* |*Comportment attendu* |*Résultat*
-|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|
-|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|
-|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |
-|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|
-|5|Sélectionner un compte puis sélectionner le bouton "Supprimer un compte" (il faut préalablement que le compte soit ouvert)|le compte afficher "clôturé" et il n'est plus ouvrable|
-|=======================
-****
 
 ****
 [options="header,footer"]
