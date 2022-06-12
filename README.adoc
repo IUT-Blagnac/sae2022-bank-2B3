@@ -49,7 +49,7 @@ link:http://iutweb.fr/sae.html[consulter ici le sujet de la sae]
 |1|Guichetier| Compte| Créer         |      |      |F      | 
 |1|Guichetier|Compte|Créditer/Débiter|      |F     |       | 
 |1|Guichetier|Compte|Effectuer un virement|F|      |       | 
-|1|Guichetier|Compte|Clôturer        |      |      |F(code)|F(doc)
+|1|Guichetier|Compte|Clôturer        |      |      |F(code)|D(doc)
 |2|Chef d’Agence|Compte|Débit exceptionnel| |      |       | 
 |2|Chef d’Agence|Emprunt|Simuler emprunt|   |      |       | 
 |2|Chef d’Agence|Emprunt| Simuler assurance||      |       | 
