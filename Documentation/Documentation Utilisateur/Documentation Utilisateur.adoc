@@ -105,7 +105,7 @@ image:https://cdn.discordapp.com/attachments/936251588803166250/9855943007106621
 Ensuite cliquez en bas à droite de la page sur " Nouveau Compte ".
 
 ==== Etape 4 :
-image:https://cdn.discordapp.com/attachments/936251588803166250/985595420413681754/unknown.png[alt="Etape4"]
+image:https://cdn.discordapp.com/attachments/936251588803166250/985595420413681754/unknown.png[alt="Etape4"] +
 image:https://cdn.discordapp.com/attachments/936251588803166250/985597743089209365/unknown.png[alt="Etape4"]
 
 Une fois la page ouverte, modifiez le découvert autorisé et le solde que vous souhaitez puis cliquez sur " Ajouter ".
