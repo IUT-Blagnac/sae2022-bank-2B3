@@ -196,7 +196,7 @@ l’accueil|ok
 |3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok
 |4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|ok
 |5|Sélectionner le bouton "Nouveau compte"|la page de gestion d'un compte s'ouvre|ok
-|6|Entrer les informations nécessaires pour faire créer un nouveau compte puis sélectionner le bouton "Ajouter"|la page se ferme et le compte est bien créer|
+|6|Entrer les informations nécessaires pour faire créer un nouveau compte puis sélectionner le bouton "Ajouter"|la page se ferme et le compte est bien créer|ok
 |=======================
 ****
 
