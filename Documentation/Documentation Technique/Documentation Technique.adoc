@@ -180,7 +180,7 @@ Conditions de validation de l’opération : Montant entré non null, positif
 * *`Operation.java`* 
 * *`AccessOperation.java`* * 
 * *`ConstantIHM.java`* 
-* *`OpérationEditorPane.java`*
+* *`OpérationEditorPaneController.java`*
 
 ==== *Detail des resources utilisées* +
 
@@ -205,7 +205,7 @@ Permet de créer une enregistrement de virement
 *`ConstantIHM.java`* +
 Permet de créer une operation pour effectuer une virement
 
-*`OpérationEditorPane.java`* +
+*`OpérationEditorPaneController.java`* +
 Affiche la page pour créer l'opération et fait parvenir les informations au contrôleur de vue
 
 === *Clôturer un compte* (Lilian Naud)
