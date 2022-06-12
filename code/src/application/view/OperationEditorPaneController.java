@@ -97,6 +97,26 @@ public class OperationEditorPaneController implements Initializable {
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
 		}
+		case VIREMENT :
+			info = "Cpt. : " + this.compteEdite.idNumCompte + "  "
+					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+			this.lblMessage.setText(info);
+
+			this.btnOk.setText("Effectuer Virement");
+			this.btnCancel.setText("Annuler virement");
+
+			list = FXCollections.observableArrayList();;
+
+			for (String tyOp : ConstantesIHM.OPERATIONS_VIREMENT_GUICHET) {
+				list.add(tyOp);
+			}
+
+			this.cbTypeOpe.setItems(list);
+			this.cbTypeOpe.getSelectionModel().select(0);
+
+			break;
+		}
 
 		// Paramétrages spécifiques pour les chefs d'agences
 		if (ConstantesIHM.isAdmin(this.dbs.getEmpAct())) {
@@ -220,6 +240,49 @@ public class OperationEditorPaneController implements Initializable {
 						this.operationResultat = new Operation(-1, montant1, null, null, this.compteEdite.idNumCli, typeOp1);
 						this.primaryStage.close();
 						break;
+		case VIREMENT :
+
+			this.txtMontant.getStyleClass().remove("borderred");
+			this.lblMontant.getStyleClass().remove("borderred");
+			this.lblMessage.getStyleClass().remove("borderred");
+			info = "Cpt. : " + this.compteEdite.idNumCompte + "  "
+					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+					+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+			this.lblMessage.setText(info);
+
+			try {
+				montant = Double.parseDouble(this.txtMontant.getText().trim());
+				if (montant <= 0)
+					throw new NumberFormatException();
+			} catch (NumberFormatException nfe) {
+				this.txtMontant.getStyleClass().add("borderred");
+				this.lblMontant.getStyleClass().add("borderred");
+				this.txtMontant.requestFocus();
+				return;
+			}
+			if (this.compteEdite.solde - montant < this.compteEdite.debitAutorise) {
+				info = "Dépassement du découvert ! - Cpt. : " + this.compteEdite.idNumCompte + "  "
+						+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
+						+ String.format(Locale.ENGLISH, "%8d", this.compteEdite.debitAutorise);
+				this.lblMessage.setText(info);
+				this.txtMontant.getStyleClass().add("borderred");
+				this.lblMontant.getStyleClass().add("borderred");
+				this.lblMessage.getStyleClass().add("borderred");
+				this.txtMontant.requestFocus();
+				return;
+			}
+			typeOp = this.cbTypeOpe.getValue();
+			this.operationResultat = new Operation(-1, montant, null, null, this.compteEdite.idNumCli, typeOp);
+
+			int numCompteDestinataire = 0;
+			CompteCourant destinataire=null;
+			
+			//opération destinataire
+			this.operationResultat =new Operation(-1, montant, null, null, numCompteDestinataire,ConstantesIHM.TYPE_OP_7);
+			
+			
+			this.primaryStage.close();
+			break;
 		}
 	}
 }
