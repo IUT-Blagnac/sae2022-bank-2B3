@@ -90,6 +90,25 @@ Selectionnez le type d'opérations dans le menu déroulant, saisissez un montant
 
 ==== Etape 1 :
 
+https://cdn.discordapp.com/attachments/936251588803166250/985593004838510642/unknown.png[alt="etape1"]
+
+Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+
+Dans la gestion de clients, cliquez sur " Rechercher ", selectionnez un client. Une fois le client selectionné, cliquez sur 'Comptes client'.
+
+==== Etape 3 :
+https://cdn.discordapp.com/attachments/936251588803166250/985594300710662144/unknown.png[alt="Etape3"]
+
+Ensuite cliquez en bas à droite de la page sur " Nouveau Compte ".
+
+==== Etape 4 :
+https://cdn.discordapp.com/attachments/936251588803166250/985595420413681754/unknown.png[alt="Etape4"]
+https://cdn.discordapp.com/attachments/936251588803166250/985597743089209365/unknown.png[alt="Etape4"]
+
+Une fois la page ouverte, modifiez le découvert autorisé et le solde que vous souhaitez puis cliquez sur " Ajouter ".
 
 === *Effectuer un virement de compte à compte d'un même client* (Arnaud Dubayle)
 
