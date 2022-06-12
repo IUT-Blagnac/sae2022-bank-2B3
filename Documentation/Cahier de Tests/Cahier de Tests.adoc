@@ -209,14 +209,14 @@ l’accueil|ok
 |=======================
 |=======================
 |*Etapes* |*Action* |*Comportment attendu* |*Résultat*
-|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|
-|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|
-|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |
-|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|
-|5|Sélectionner un compte puis sélectionner le bouton "Voir opérations"|la page de gestion des opérations s'ouvre|
-|6|Sélectionner un compte puis sélectionner le bouton "Voir opérations" (il faut que le compte soit "ouvert" et non "clôturer"|la page de gestion des opérations s'ouvre|
-|7|Sélectionner "Effectuer un virement"|la page "Enregistrement d'un virement" s'ouvre|
-|8|Saisisez le montant et le N° du compte destinataire puis sélectionner le bouton "Effectuer un virement"|retour à la page gestion des opérations et le virement à bien eu lieux|
+|1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|ok
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
+|3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |ok
+|4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|ok
+|5|Sélectionner un compte puis sélectionner le bouton "Voir opérations"|la page de gestion des opérations s'ouvre|ok
+|6|Sélectionner un compte puis sélectionner le bouton "Voir opérations" (il faut que le compte soit "ouvert" et non "clôturer"|la page de gestion des opérations s'ouvre|ok
+|7|Sélectionner "Effectuer un virement"|la page "Enregistrement d'un virement" s'ouvre|ok
+|8|Saisisez le montant puis sélectionner le bouton "Effectuer un virement"|retour à la page gestion des opérations et le virement à bien eu lieux|ok
 |=======================
 ****
 
