@@ -126,7 +126,7 @@ En sélectionnant "Annuler virement" vous annuler l’opération. Attention aucu
 
 Afin que l’opération se valide correctement, le montant doit être positif, le compte du destinataire ne doit pas être cloturé le compte transacteur doit être suffisamment approvisionné pour faire le virement.
 
-=== *Clôturer un compte* (Code fait par Quentin Guilhamassé)
+=== *Clôturer un compte* (Doc: Lilian Naud, Code: Quentin Guilhamassé)
 
 === *Gérer (CRUD) les employés (guichetier et chef d’agence)*
 
