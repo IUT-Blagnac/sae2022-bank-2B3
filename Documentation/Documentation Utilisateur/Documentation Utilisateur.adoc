@@ -128,6 +128,6 @@ Afin que l’opération se valide correctement, le montant doit être positif, l
 
 === *Clôturer un compte* (Code fait par Quentin Guilhamassé)
 
-=== *Gérer (CRUD) les employés (guichetier et chef d’agence)* (Lilian Naud)
+=== *Gérer (CRUD) les employés (guichetier et chef d’agence)*
 
 
