@@ -192,7 +192,7 @@ l’accueil|ok
 |=======================
 |*Etapes* |*Action* |*Comportment attendu* |*Résultat*
 |1|se connecter en tant que guichetier ou chef d'agence|le guichetier ou chef d'agence est connecter|ok
-|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|
+|2|sélectionner le bouton "gestions" puis "client" |la page de gestion de client s'affiche|ok
 |3|sélectionner le bouton "Rechercher" |La liste des clients s'affiche |
 |4|sélectionner un client puis sélectionner le bouton "Comptes client" |la page du client s'ouvre|
 |5|Sélectionner le bouton "Nouveau compte"|la page de gestion d'un compte s'ouvre|
