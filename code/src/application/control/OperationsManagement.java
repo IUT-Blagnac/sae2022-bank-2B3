@@ -136,6 +136,29 @@ public class OperationsManagement {
 		return op;
 	}
 	
+	public Operation enregistrerVirement() {
+
+		OperationEditorPane oep = new OperationEditorPane(this.primaryStage, this.dbs);
+		Operation op = oep.doOperationEditorDialog(this.compteConcerne, CategorieOperation.VIREMENT);
+		if (op != null) {
+			try {
+				AccessOperation ao = new AccessOperation();
+				ao.insertVirement(this.compteConcerne.idNumCompte, Integer.parseInt(op.idCptVirement), op.montant);
+
+			} catch (DatabaseConnexionException e) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dbs, e);
+				ed.doExceptionDialog();
+				this.primaryStage.close();
+				op = null;
+			} catch (ApplicationException ae) {
+				ExceptionDialog ed = new ExceptionDialog(this.primaryStage, this.dbs, ae);
+				ed.doExceptionDialog();
+				op = null;
+			}
+		}
+		return op;
+	}
+	
          /**
 	 * Permet d'obtenir la liste des opérations d'un compte
 	 * @return : le compte ainsi que sa liste d'opérations
