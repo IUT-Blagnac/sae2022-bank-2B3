@@ -108,7 +108,32 @@ public class ComptesManagementController implements Initializable {
 	}
 
 	@FXML
-	private void doSupprimerCompte() {
+	private void doSupprimerCompte() throws RowNotFoundOrTooManyRowsException, DataAccessException,
+	DatabaseConnexionException, ManagementRuleViolation {
+		if (compteS.solde != 0 || compteS == null) {//si le compte n'a pas un solde égal à 0€ ou n'existe pas, il ne peut pas être supprimé
+			Alert confirmBox = new Alert(AlertType.ERROR);
+			confirmBox.setTitle("Cloturer Compte");
+			confirmBox.setHeaderText("Impossible de cloturer le compte avec un solde diffÃ©rent de 0");
+			confirmBox.showAndWait();
+
+		} else {
+
+			if (compteS.estCloture.equals("N")) {
+				Alert confirmBox = new Alert(AlertType.CONFIRMATION);//on demande à l'utilisateur une confirmation
+				confirmBox.setTitle("Cloturer Compte");
+				confirmBox.setHeaderText("Supprimer Compte");
+				Optional<ButtonType> reponse = confirmBox.showAndWait();
+				
+				if (reponse.orElse(null) == ButtonType.OK) {//si l'utilisateur clique sur "OK", cela veut dire qu'il cloture le compte.
+					compteS.solde = 0;
+					compteS.estCloture = "O";
+					lvComptes.refresh();
+					acC = new AccessCompteCourant();
+					acC.cloturerCompteCourant(compteS);//on cloture donc le compte
+					btnSupprCompte.setDisable(true);//on ne peut plus cliquer sur le bouton pour supprimer le compte
+				}
+			}
+		}
 	}
 
 	@FXML
