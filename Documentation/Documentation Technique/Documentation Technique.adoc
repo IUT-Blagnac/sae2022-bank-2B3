@@ -238,8 +238,6 @@ Permet d'accéder aux comptes d'un client et d'en faire les modifications souhai
 
 Cette fonctionnalité permet de générer un relevé de compte pour le compte du client choisit. Ce relevé de compte sera créee sous la forme d'un document PDF où on y retrouve le nom du client, ses dépots, retraits et le solde du compte.
 
-==== Use Case
-image:https://cdn.discordapp.com/attachments/936251588803166250/984740752217215006/use_case.png[alt="usecase"]
 
 ==== Classes et ressources utilisées
 .Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
