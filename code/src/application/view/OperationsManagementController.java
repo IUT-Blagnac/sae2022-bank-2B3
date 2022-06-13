@@ -189,4 +189,30 @@ public class OperationsManagementController implements Initializable {
 
 		this.validateComponentState();
 	}
+	
+	
+	@FXML
+	private void doGenererUnPDF() throws DocumentException, MalformedURLException, IOException{
+		
+		Document doc = new Document(); 
+		try {
+			PdfWriter pdfWriter = PdfWriter.getInstance(doc, new FileOutputStream("ReleveCompte" + this.clientDuCompte.nom + this.compteConcerne.idNumCompte +".pdf"));
+			pdfWriter.setViewerPreferences(PdfWriter.PageLayoutTwoColumnLeft);
+			doc.open();
+			doc.add(new Chunk(""));
+			Paragraph p1 = new Paragraph("Releve de comptes de " + this.clientDuCompte.nom + " " +  this.clientDuCompte.prenom +" : \n\n");
+			doc.add(p1);
+			int taille = this.lvOperations.getItems().size();
+			Paragraph p;
+			for (int i = 0; i < taille; i++) {
+				p = new Paragraph (this.lvOperations.getItems().get(i).toString());
+				doc.add(p);
+			}
+			p = new Paragraph("\nSolde du compte : " + this.compteConcerne.solde); 
+			doc.add(p);
+			doc.close();
+		}catch (Exception e) { 
+			e.printStackTrace();   
+		}
+	}
 }
