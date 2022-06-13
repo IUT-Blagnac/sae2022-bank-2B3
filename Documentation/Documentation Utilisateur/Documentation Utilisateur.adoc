@@ -130,4 +130,27 @@ Afin que l’opération se valide correctement, le montant doit être positif, l
 
 === *Gérer (CRUD) les employés (guichetier et chef d’agence)*
 
+=== *Générer un relevé PDF* (Quentin Guihamassé)
 
+==== Etape 1 :
+
+image:https://cdn.discordapp.com/attachments/936251588803166250/985593004838510642/unknown.png[alt="etape1"]
+
+Dans la fenêtre principale, cliquez sur le bouton 'Gestion', puis sur le bouton 'Clients'
+
+==== Etape 2 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444760181035049/unknown.png[alt="etape2"]
+
+Dans la gestion de clients, cliquez sur " Rechercher "puis selectionnez un client. Une fois le client selectionné, cliquez sur 'Comptes client'.
+
+==== Etape 3 :
+image:https://media.discordapp.net/attachments/962004101552545852/981444849498751016/unknown.png[alt="Etape3"]
+
+Selectionez le compte sur lequel effectuer une opération puis cliquez sur 'Voir opérations'.
+
+==== Etape 4 :
+image:https://cdn.discordapp.com/attachments/936251588803166250/985977479229497354/unknown.png[alt="Etape4"] +
+image:https://cdn.discordapp.com/attachments/936251588803166250/985978084434010205/unknown.png[alt="Etape4"] +
+image:https://cdn.discordapp.com/attachments/936251588803166250/985978428115279922/unknown.png[alt="Etape4"]
+
+Une fois la page ouverte, cliquez sur " Générer PDF ". Le PDF est stocké au même endroit que le src.
