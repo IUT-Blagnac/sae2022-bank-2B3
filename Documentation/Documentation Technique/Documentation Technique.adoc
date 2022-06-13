@@ -226,4 +226,29 @@ Controlleur de la fenêtre "Gestion des comptes". On peut gérer les comptes gr�
 *`AccesCompteCourant`* +
 Permet d'accéder aux comptes d'un client et d'en faire les modifications souhaitées.
 
-=== *Gérer (CRUD) les employés (guichetier et chef d’agence)* 
+=== *Gérer (CRUD) les employés (guichetier et chef d’agence)*
+
+
+
+== *Fonctionnalités Version 2*
+
+=== *Générer un PDF* (Quentin Guihamassé)
+
+==== Description de la fonctionalité
+
+Cette fonctionnalité permet de générer un relevé de compte pour le compte du client choisit. Ce relevé de compte sera créee sous la forme d'un document PDF où on y retrouve le nom du client, ses dépots, retraits et le solde du compte.
+
+==== Use Case
+image:https://cdn.discordapp.com/attachments/936251588803166250/984740752217215006/use_case.png[alt="usecase"]
+
+==== Classes et ressources utilisées
+.Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
+* `OperationsManagementController`
+* `OperationsManagement.fxml`
+
+==== Detail des resources
+*`OperationsManagementController :`* +
+Controller de la fenêtre "Gestions des opérations".  On peut générer un PDF, enregistrer un crédit, débit, virement et retourner à la gestion des comptes.
+
+*`OperationsManagement.fxml :`* +
+Page FXML qui correspond à la fenêtre "Gestion des opérations".
