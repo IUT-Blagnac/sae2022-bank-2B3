@@ -83,7 +83,7 @@ public class ComptesManagementController implements Initializable {
 	@FXML
 	private Button btnSupprCompte;
 	
-	CompteCourant compteS;
+	CompteCourant compteS = null;
 	AccessCompteCourant acC;
 
 	@Override
