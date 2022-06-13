@@ -212,7 +212,7 @@ public class OperationsManagementController implements Initializable {
 			doc.add(p);
 			doc.close();
 		}catch (Exception e) { 
-			e.printStackTrace();   
+			e.printStackTrace();    
 		}
 	}
 }
