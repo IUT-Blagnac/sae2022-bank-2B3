@@ -113,6 +113,7 @@ public class ComptesManagementController implements Initializable {
 	@FXML
 	private void doSupprimerCompte() throws RowNotFoundOrTooManyRowsException, DataAccessException,
 	DatabaseConnexionException, ManagementRuleViolation {
+		btnSupprCompte.setDisable(false);
 		if (compteS.solde != 0 || compteS == null) {//si le compte n'a pas un solde égal à 0€ ou n'existe pas, il ne peut pas être supprimé
 			Alert confirmBox = new Alert(AlertType.ERROR);
 			confirmBox.setTitle("Cloturer Compte");
