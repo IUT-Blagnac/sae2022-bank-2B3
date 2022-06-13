@@ -82,6 +82,9 @@ public class ComptesManagementController implements Initializable {
 	private Button btnModifierCompte;
 	@FXML
 	private Button btnSupprCompte;
+	
+	CompteCourant compteS;
+	AccessCompteCourant acC;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
