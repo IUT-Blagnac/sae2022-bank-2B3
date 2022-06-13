@@ -130,6 +130,9 @@ Afin que l’opération se valide correctement, le montant doit être positif, l
 
 === *Gérer (CRUD) les employés (guichetier et chef d’agence)*
 
+
+== *Utiliser l'application* Version 2
+
 === *Générer un relevé PDF* (Quentin Guihamassé)
 
 ==== Etape 1 :
