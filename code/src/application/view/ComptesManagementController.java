@@ -10,7 +10,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
@@ -18,6 +21,11 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import model.data.Client;
 import model.data.CompteCourant;
+import model.orm.AccessCompteCourant;
+import model.orm.exception.DataAccessException;
+import model.orm.exception.DatabaseConnexionException;
+import model.orm.exception.ManagementRuleViolation;
+import model.orm.exception.RowNotFoundOrTooManyRowsException;
 
 public class ComptesManagementController implements Initializable {
 
