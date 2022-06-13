@@ -217,19 +217,11 @@ Cette fonctionnalité permet de supprimer un compte existant pour un client. Une
 ==== Classes et ressources utilisées
 .Les classes et les ressources utilisées pour cette fonctionalité sont les suivantes :
 * `ComptesManagementController.java`
-* `ComptesManagement.java`
-* `ComptesManagement.fxml`
 * `AccesCompteCourant`
 
 ==== Detail des resources
 *`ComptesManagementController.java :`* +
 Controlleur de la fenêtre "Gestion des comptes". On peut gérer les comptes grâce aux boutons "btnVoirOpes", "btnModifierCompte", "btnSupprCompte".
-
-*`ComptesManagement.java`* +
-Permet de gérer les comptes d'un client grâce aux fonctions "getComptesDunClient", "creerCompte", "supprimerCompte" et aux méthodes "gererOperations", "doComptesManagementDialog".
-
-*`ComptesManagement.fxml`* +
-Page FXML qui correspond à la fenêtre "Gestion des comptes".
 
 *`AccesCompteCourant`* +
 Permet d'accéder aux comptes d'un client et d'en faire les modifications souhaitées.
