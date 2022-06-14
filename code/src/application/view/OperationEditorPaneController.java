@@ -96,7 +96,7 @@ public class OperationEditorPaneController implements Initializable {
 			this.cbTypeOpe.setItems(list2);
 			this.cbTypeOpe.getSelectionModel().select(0);
 			break;
-		}
+		
 		case VIREMENT :
 			info = "Cpt. : " + this.compteEdite.idNumCompte + "  "
 					+ String.format(Locale.ENGLISH, "%12.02f", this.compteEdite.solde) + "  /  "
@@ -117,7 +117,7 @@ public class OperationEditorPaneController implements Initializable {
 
 			break;
 		}
-
+	
 		// Paramétrages spécifiques pour les chefs d'agences
 		if (ConstantesIHM.isAdmin(this.dbs.getEmpAct())) {
 			// rien pour l'instant
