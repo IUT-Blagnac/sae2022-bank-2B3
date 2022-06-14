@@ -45,6 +45,7 @@
                            </GridPane.margin>
                         </Button>
                         <Button fx:id="btncredit2" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#doCredit" text="Enregistrer Crédit" GridPane.rowIndex="2" />
+                        <Button layoutX="10.0" layoutY="95.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#doGenererUnPDF" text="Générer PDF" />
                      </children>
                   </GridPane>
                </children>
